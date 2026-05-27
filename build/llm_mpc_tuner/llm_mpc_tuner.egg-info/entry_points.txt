@@ -1,0 +1,2 @@
+[console_scripts]
+llm_mpc_tuner_node = llm_mpc_tuner.llm_mpc_tuner_node:main

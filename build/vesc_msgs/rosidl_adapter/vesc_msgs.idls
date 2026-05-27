@@ -1,0 +1,4 @@
+/home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescState.idl
+/home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescStateStamped.idl
+/home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImu.idl
+/home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_adapter/vesc_msgs:msg/VescImuStamped.idl

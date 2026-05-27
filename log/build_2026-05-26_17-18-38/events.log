@@ -1,0 +1,963 @@
+[0.000000] (-) TimerEvent: {}
+[0.000805] (ackermann_mux) JobQueued: {'identifier': 'ackermann_mux', 'dependencies': OrderedDict()}
+[0.001021] (llm_mpc_tuner) JobQueued: {'identifier': 'llm_mpc_tuner', 'dependencies': OrderedDict()}
+[0.001229] (mpc_controller) JobQueued: {'identifier': 'mpc_controller', 'dependencies': OrderedDict()}
+[0.001319] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.001397] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/fabiocar/roboracer_ws/install/vesc_msgs')])}
+[0.001474] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/fabiocar/roboracer_ws/install/vesc_msgs')])}
+[0.001543] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/home/fabiocar/roboracer_ws/install/vesc_msgs'), ('vesc_ackermann', '/home/fabiocar/roboracer_ws/install/vesc_ackermann'), ('vesc_driver', '/home/fabiocar/roboracer_ws/install/vesc_driver')])}
+[0.001615] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/fabiocar/roboracer_ws/install/ackermann_mux'), ('vesc_msgs', '/home/fabiocar/roboracer_ws/install/vesc_msgs'), ('vesc_ackermann', '/home/fabiocar/roboracer_ws/install/vesc_ackermann'), ('vesc_driver', '/home/fabiocar/roboracer_ws/install/vesc_driver'), ('vesc', '/home/fabiocar/roboracer_ws/install/vesc')])}
+[0.001693] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.018094] (ackermann_mux) JobStarted: {'identifier': 'ackermann_mux'}
+[0.024089] (llm_mpc_tuner) JobStarted: {'identifier': 'llm_mpc_tuner'}
+[0.036910] (mpc_controller) JobStarted: {'identifier': 'mpc_controller'}
+[0.046912] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.050560] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'build'}
+[0.050763] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/roboracer_ws/build/vesc_msgs', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.057536] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'cmake'}
+[0.063933] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'build'}
+[0.064365] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/roboracer_ws/build/ackermann_mux', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/roboracer_ws/build/ackermann_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/ackermann_mux'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.099399] (-) TimerEvent: {}
+[0.199947] (-) TimerEvent: {}
+[0.300414] (-) TimerEvent: {}
+[0.391700] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.393639] (ackermann_mux) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400492] (-) TimerEvent: {}
+[0.411212] (ackermann_mux) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.484160] (ackermann_mux) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.490488] (ackermann_mux) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.500585] (-) TimerEvent: {}
+[0.506811] (ackermann_mux) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.528692] (ackermann_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.529120] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.532776] (vesc_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.556275] (ackermann_mux) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600902] (-) TimerEvent: {}
+[0.603578] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.638946] (ackermann_mux) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.644142] (ackermann_mux) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701033] (-) TimerEvent: {}
+[0.801554] (-) TimerEvent: {}
+[0.826997] (ackermann_mux) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.901664] (-) TimerEvent: {}
+[0.927722] (ackermann_mux) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)\n'}
+[0.953310] (ackermann_mux) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[0.990219] (ackermann_mux) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.001733] (-) TimerEvent: {}
+[1.102116] (-) TimerEvent: {}
+[1.135376] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.143371] (ackermann_mux) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.189313] (ackermann_mux) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.189537] (ackermann_mux) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.189637] (ackermann_mux) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[1.202213] (-) TimerEvent: {}
+[1.229121] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.229856] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.237865] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.238251] (ackermann_mux) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fabiocar/roboracer_ws/src/ackermann_mux/include\n'}
+[1.238397] (ackermann_mux) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.246282] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.246478] (ackermann_mux) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.248064] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.250428] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.252173] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.258397] (ackermann_mux) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.258571] (ackermann_mux) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.266562] (ackermann_mux) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.298345] (ackermann_mux) StdoutLine: {'line': b'-- Generating done\n'}
+[1.302326] (-) TimerEvent: {}
+[1.305650] (ackermann_mux) StdoutLine: {'line': b'-- Build files have been written to: /home/fabiocar/roboracer_ws/build/ackermann_mux\n'}
+[1.352682] (ackermann_mux) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ackermann_mux\x1b[0m\n'}
+[1.358863] (llm_mpc_tuner) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/llm_mpc_tuner', 'build', '--build-base', '/home/fabiocar/roboracer_ws/build/llm_mpc_tuner/build', 'install', '--record', '/home/fabiocar/roboracer_ws/build/llm_mpc_tuner/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fabiocar/roboracer_ws/src/llm_mpc_tuner', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'fabiocar', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/fabiocar', 'OLDPWD': '/home/fabiocar', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.4.7', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson AGX Orin Developer Kit', 'LC_MONETARY': 'de_CH.UTF-8', 'SYSTEMD_EXEC_PID': '3123', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'fabiocar', 'JETSON_MODULE': 'NVIDIA Jetson AGX Orin (64GB ram)', 'JETSON_SERIAL_NUMBER': '1422625029748', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fabiocar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_CH.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_CH.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.91', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/fabiocar/roboracer_ws/build/llm_mpc_tuner', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabiocar/roboracer_ws/build/llm_mpc_tuner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux', 'JETSON_P_NUMBER': 'p3701-0005'}, 'shell': False}
+[1.363791] (mpc_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/mpc_controller', 'build', '--build-base', '/home/fabiocar/roboracer_ws/build/mpc_controller/build', 'install', '--record', '/home/fabiocar/roboracer_ws/build/mpc_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fabiocar/roboracer_ws/src/mpc_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'fabiocar', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/fabiocar', 'OLDPWD': '/home/fabiocar', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.4.7', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson AGX Orin Developer Kit', 'LC_MONETARY': 'de_CH.UTF-8', 'SYSTEMD_EXEC_PID': '3123', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'fabiocar', 'JETSON_MODULE': 'NVIDIA Jetson AGX Orin (64GB ram)', 'JETSON_SERIAL_NUMBER': '1422625029748', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fabiocar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_CH.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_CH.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.91', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/fabiocar/roboracer_ws/build/mpc_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabiocar/roboracer_ws/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux', 'JETSON_P_NUMBER': 'p3701-0005'}, 'shell': False}
+[1.402433] (-) TimerEvent: {}
+[1.434776] (ackermann_mux) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_node.cpp.o\x1b[0m\n'}
+[1.435196] (ackermann_mux) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux_diagnostics.cpp.o\x1b[0m\n'}
+[1.435734] (ackermann_mux) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_mux.dir/src/ackermann_mux.cpp.o\x1b[0m\n'}
+[1.502551] (-) TimerEvent: {}
+[1.575084] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.602637] (-) TimerEvent: {}
+[1.703233] (-) TimerEvent: {}
+[1.736076] (mpc_controller) StdoutLine: {'line': b'running egg_info\n'}
+[1.759050] (mpc_controller) StdoutLine: {'line': b'writing ../../build/mpc_controller/mpc_controller.egg-info/PKG-INFO\n'}
+[1.760392] (mpc_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/mpc_controller/mpc_controller.egg-info/dependency_links.txt\n'}
+[1.760798] (mpc_controller) StdoutLine: {'line': b'writing entry points to ../../build/mpc_controller/mpc_controller.egg-info/entry_points.txt\n'}
+[1.761277] (mpc_controller) StdoutLine: {'line': b'writing requirements to ../../build/mpc_controller/mpc_controller.egg-info/requires.txt\n'}
+[1.761498] (mpc_controller) StdoutLine: {'line': b'writing top-level names to ../../build/mpc_controller/mpc_controller.egg-info/top_level.txt\n'}
+[1.762261] (llm_mpc_tuner) StdoutLine: {'line': b'running egg_info\n'}
+[1.785215] (llm_mpc_tuner) StdoutLine: {'line': b'writing ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/PKG-INFO\n'}
+[1.786590] (llm_mpc_tuner) StdoutLine: {'line': b'writing dependency_links to ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/dependency_links.txt\n'}
+[1.786977] (llm_mpc_tuner) StdoutLine: {'line': b'writing entry points to ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/entry_points.txt\n'}
+[1.787498] (llm_mpc_tuner) StdoutLine: {'line': b'writing requirements to ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/requires.txt\n'}
+[1.787716] (llm_mpc_tuner) StdoutLine: {'line': b'writing top-level names to ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/top_level.txt\n'}
+[1.803333] (-) TimerEvent: {}
+[1.818137] (mpc_controller) StdoutLine: {'line': b"reading manifest file '../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'\n"}
+[1.820663] (mpc_controller) StdoutLine: {'line': b"writing manifest file '../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'\n"}
+[1.820995] (mpc_controller) StdoutLine: {'line': b'running build\n'}
+[1.821159] (mpc_controller) StdoutLine: {'line': b'running build_py\n'}
+[1.822666] (mpc_controller) StdoutLine: {'line': b'copying mpc_controller/frenet_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller\n'}
+[1.823385] (mpc_controller) StdoutLine: {'line': b'copying mpc_controller/__init__.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller\n'}
+[1.823678] (mpc_controller) StdoutLine: {'line': b'copying mpc_controller/kinematic_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller\n'}
+[1.824313] (mpc_controller) StdoutLine: {'line': b'copying mpc_controller/mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller\n'}
+[1.825029] (mpc_controller) StdoutLine: {'line': b'copying mpc_controller/trajectory_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller\n'}
+[1.826004] (mpc_controller) StdoutLine: {'line': b'running install\n'}
+[1.832404] (mpc_controller) StdoutLine: {'line': b'running install_lib\n'}
+[1.837243] (llm_mpc_tuner) StdoutLine: {'line': b"reading manifest file '../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'\n"}
+[1.839580] (llm_mpc_tuner) StdoutLine: {'line': b"writing manifest file '../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'\n"}
+[1.839870] (llm_mpc_tuner) StdoutLine: {'line': b'running build\n'}
+[1.839979] (llm_mpc_tuner) StdoutLine: {'line': b'running build_py\n'}
+[1.841257] (llm_mpc_tuner) StdoutLine: {'line': b'copying llm_mpc_tuner/__init__.py -> /home/fabiocar/roboracer_ws/build/llm_mpc_tuner/build/lib/llm_mpc_tuner\n'}
+[1.841554] (llm_mpc_tuner) StdoutLine: {'line': b'copying llm_mpc_tuner/llm_mpc_tuner_node.py -> /home/fabiocar/roboracer_ws/build/llm_mpc_tuner/build/lib/llm_mpc_tuner\n'}
+[1.842479] (llm_mpc_tuner) StdoutLine: {'line': b'running install\n'}
+[1.848805] (llm_mpc_tuner) StdoutLine: {'line': b'running install_lib\n'}
+[1.858379] (mpc_controller) StdoutLine: {'line': b'running install_data\n'}
+[1.859406] (mpc_controller) StdoutLine: {'line': b'copying resource/mpc_controller -> /home/fabiocar/roboracer_ws/install/mpc_controller/share/ament_index/resource_index/packages\n'}
+[1.859775] (mpc_controller) StdoutLine: {'line': b'copying package.xml -> /home/fabiocar/roboracer_ws/install/mpc_controller/share/mpc_controller\n'}
+[1.859989] (mpc_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.884934] (mpc_controller) StdoutLine: {'line': b"removing '/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.885389] (mpc_controller) StdoutLine: {'line': b'Copying ../../build/mpc_controller/mpc_controller.egg-info to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info\n'}
+[1.887881] (llm_mpc_tuner) StdoutLine: {'line': b'running install_data\n'}
+[1.894090] (mpc_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[1.894361] (llm_mpc_tuner) StdoutLine: {'line': b'copying resource/llm_mpc_tuner -> /home/fabiocar/roboracer_ws/install/llm_mpc_tuner/share/ament_index/resource_index/packages\n'}
+[1.894850] (llm_mpc_tuner) StdoutLine: {'line': b'copying package.xml -> /home/fabiocar/roboracer_ws/install/llm_mpc_tuner/share/llm_mpc_tuner\n'}
+[1.895084] (llm_mpc_tuner) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.903415] (-) TimerEvent: {}
+[1.919723] (llm_mpc_tuner) StdoutLine: {'line': b"removing '/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.920193] (llm_mpc_tuner) StdoutLine: {'line': b'Copying ../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info to /home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info\n'}
+[1.929855] (llm_mpc_tuner) StdoutLine: {'line': b'running install_scripts\n'}
+[1.943467] (mpc_controller) StdoutLine: {'line': b'Installing frenet_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller\n'}
+[1.944856] (mpc_controller) StdoutLine: {'line': b'Installing kinematic_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller\n'}
+[1.945201] (mpc_controller) StdoutLine: {'line': b'Installing mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller\n'}
+[1.945498] (mpc_controller) StdoutLine: {'line': b'Installing trajectory_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller\n'}
+[1.946082] (mpc_controller) StdoutLine: {'line': b"writing list of installed files to '/home/fabiocar/roboracer_ws/build/mpc_controller/install.log'\n"}
+[1.979923] (llm_mpc_tuner) StdoutLine: {'line': b'Installing llm_mpc_tuner_node script to /home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/llm_mpc_tuner\n'}
+[1.981339] (llm_mpc_tuner) StdoutLine: {'line': b"writing list of installed files to '/home/fabiocar/roboracer_ws/build/llm_mpc_tuner/install.log'\n"}
+[1.996131] (mpc_controller) CommandEnded: {'returncode': 0}
+[2.003551] (-) TimerEvent: {}
+[2.027177] (mpc_controller) JobEnded: {'identifier': 'mpc_controller', 'rc': 0}
+[2.032789] (llm_mpc_tuner) CommandEnded: {'returncode': 0}
+[2.047633] (llm_mpc_tuner) JobEnded: {'identifier': 'llm_mpc_tuner', 'rc': 0}
+[2.103712] (-) TimerEvent: {}
+[2.159287] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.201789] (vesc_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.203774] (-) TimerEvent: {}
+[2.244462] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.244910] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.245102] (vesc_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[2.303955] (-) TimerEvent: {}
+[2.359421] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.385630] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.388616] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.389724] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.395761] (vesc_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.404043] (-) TimerEvent: {}
+[2.504496] (-) TimerEvent: {}
+[2.514063] (vesc_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.538350] (vesc_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/fabiocar/roboracer_ws/build/vesc_msgs\n'}
+[2.596410] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.604641] (-) TimerEvent: {}
+[2.607385] (vesc_msgs) StdoutLine: {'line': b'[  1%] Built target vesc_msgs__cpp\n'}
+[2.618346] (vesc_msgs) StdoutLine: {'line': b'[  3%] \x1b[32m\x1b[1mLinking C shared library libvesc_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.624715] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.625083] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.625219] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.626791] (vesc_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_vesc_msgs\n'}
+[2.647416] (vesc_msgs) StdoutLine: {'line': b'[  7%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.647805] (vesc_msgs) StdoutLine: {'line': b'[  7%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.650989] (vesc_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.651471] (vesc_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.cpp.o\x1b[0m\n'}
+[2.651617] (vesc_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o\x1b[0m\n'}
+[2.651728] (vesc_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o\x1b[0m\n'}
+[2.704782] (-) TimerEvent: {}
+[2.709834] (vesc_msgs) StdoutLine: {'line': b'[ 23%] Built target vesc_msgs__rosidl_generator_c\n'}
+[2.715834] (vesc_msgs) StdoutLine: {'line': b'[ 32%] Built target vesc_msgs__rosidl_typesupport_cpp\n'}
+[2.728546] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.730879] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.731901] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.753859] (vesc_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.754259] (vesc_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking C shared library libvesc_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.756181] (vesc_msgs) StdoutLine: {'line': b'[ 45%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.760045] (vesc_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[2.767561] (vesc_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[2.776544] (vesc_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o\x1b[0m\n'}
+[2.777208] (vesc_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.cpp.o\x1b[0m\n'}
+[2.812752] (-) TimerEvent: {}
+[2.834376] (vesc_msgs) StdoutLine: {'line': b'[ 61%] Built target vesc_msgs__rosidl_typesupport_introspection_c\n'}
+[2.873016] (vesc_msgs) StdoutLine: {'line': b'[ 70%] Built target vesc_msgs__rosidl_typesupport_c\n'}
+[2.912886] (-) TimerEvent: {}
+[3.001676] (vesc_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.013027] (-) TimerEvent: {}
+[3.029694] (vesc_msgs) StdoutLine: {'line': b'writing vesc_msgs.egg-info/PKG-INFO\n'}
+[3.031247] (vesc_msgs) StdoutLine: {'line': b'writing dependency_links to vesc_msgs.egg-info/dependency_links.txt\n'}
+[3.031966] (vesc_msgs) StdoutLine: {'line': b'writing top-level names to vesc_msgs.egg-info/top_level.txt\n'}
+[3.113176] (-) TimerEvent: {}
+[3.114856] (vesc_msgs) StdoutLine: {'line': b"reading manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[3.118801] (vesc_msgs) StdoutLine: {'line': b"writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[3.206324] (vesc_msgs) StdoutLine: {'line': b'[ 70%] Built target ament_cmake_python_build_vesc_msgs_egg\n'}
+[3.213360] (-) TimerEvent: {}
+[3.306409] (vesc_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.313509] (-) TimerEvent: {}
+[3.379663] (vesc_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.413631] (-) TimerEvent: {}
+[3.425363] (vesc_msgs) StdoutLine: {'line': b'[ 76%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.496021] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.513763] (-) TimerEvent: {}
+[3.530134] (vesc_msgs) StdoutLine: {'line': b'[ 78%] Built target vesc_msgs\n'}
+[3.565466] (vesc_msgs) StdoutLine: {'line': b'[ 80%] Built target vesc_msgs__py\n'}
+[3.585832] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_generator_py\x1b[0m\n'}
+[3.613887] (-) TimerEvent: {}
+[3.619020] (vesc_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/libvesc_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.694180] (vesc_msgs) StdoutLine: {'line': b'[ 89%] Built target vesc_msgs__rosidl_generator_py\n'}
+[3.709381] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.709767] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.709889] (vesc_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.714002] (-) TimerEvent: {}
+[3.727956] (vesc_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.728373] (vesc_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.728503] (vesc_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/vesc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.814167] (-) TimerEvent: {}
+[3.914727] (-) TimerEvent: {}
+[4.009451] (vesc_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.010822] (vesc_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.010988] (vesc_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.014810] (-) TimerEvent: {}
+[4.067906] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.069813] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.070069] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs__rosidl_typesupport_c__pyext\n'}
+[4.096094] (vesc_msgs) CommandEnded: {'returncode': 0}
+[4.096817] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'install'}
+[4.111075] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/roboracer_ws/build/vesc_msgs'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[4.114912] (-) TimerEvent: {}
+[4.125718] (vesc_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.127471] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs\n'}
+[4.128146] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.128543] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.128935] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.h\n'}
+[4.129123] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.h\n'}
+[4.129238] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.129419] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.h\n'}
+[4.129632] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.h\n'}
+[4.129900] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__functions.h\n'}
+[4.130153] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h\n'}
+[4.130341] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__functions.c\n'}
+[4.130468] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__functions.h\n'}
+[4.130585] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h\n'}
+[4.130673] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__functions.c\n'}
+[4.130757] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__functions.c\n'}
+[4.130882] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.h\n'}
+[4.130968] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.h\n'}
+[4.131050] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c\n'}
+[4.131132] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h\n'}
+[4.131212] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__functions.h\n'}
+[4.131293] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h\n'}
+[4.131374] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.h\n'}
+[4.131464] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.h\n'}
+[4.131546] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.131625] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.h\n'}
+[4.131705] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.sh\n'}
+[4.131784] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.dsv\n'}
+[4.132116] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_c.so\n'}
+[4.133086] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_c.so" to ""\n'}
+[4.133370] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.133611] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.133708] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.133794] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_c.h\n'}
+[4.133879] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[4.133962] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[4.134044] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[4.134125] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.134274] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.134890] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.135110] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.135371] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.135609] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.135701] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.135785] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.c\n'}
+[4.135868] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.c\n'}
+[4.135949] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c\n'}
+[4.136053] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c\n'}
+[4.136134] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_c.h\n'}
+[4.136276] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_c.h\n'}
+[4.136365] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_c.h\n'}
+[4.136449] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_c.h\n'}
+[4.136530] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.136807] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.137398] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so\n'}
+[4.137932] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.138143] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.138291] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.138539] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.hpp\n'}
+[4.138801] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.139062] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.hpp\n'}
+[4.139282] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__traits.hpp\n'}
+[4.139503] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__builder.hpp\n'}
+[4.139700] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.hpp\n'}
+[4.139829] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__builder.hpp\n'}
+[4.139916] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.hpp\n'}
+[4.139999] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__traits.hpp\n'}
+[4.140080] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.hpp\n'}
+[4.140160] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.hpp\n'}
+[4.140239] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.hpp\n'}
+[4.140318] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp\n'}
+[4.140395] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__traits.hpp\n'}
+[4.140473] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__builder.hpp\n'}
+[4.140552] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__builder.hpp\n'}
+[4.140693] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.hpp\n'}
+[4.140782] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__traits.hpp\n'}
+[4.140937] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.hpp\n'}
+[4.141045] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.hpp\n'}
+[4.141128] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.hpp\n'}
+[4.141231] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.141315] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.141397] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.141527] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.141729] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.141958] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.142180] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.142271] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.142356] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/dds_fastrtps\n'}
+[4.142439] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.142521] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.142601] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.142698] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs\n'}
+[4.142780] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg\n'}
+[4.142860] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail\n'}
+[4.142938] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp\n'}
+[4.143018] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.143161] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.143254] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.cpp\n'}
+[4.143339] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.cpp\n'}
+[4.143421] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.cpp\n'}
+[4.143502] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.143599] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.143680] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.143830] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.144383] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so\n'}
+[4.144939] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.145112] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.sh\n'}
+[4.145238] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.dsv\n'}
+[4.145401] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info\n'}
+[4.145547] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/PKG-INFO\n'}
+[4.145730] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.145952] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/top_level.txt\n'}
+[4.146164] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs-1.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.146456] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs\n'}
+[4.146898] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/__init__.py\n'}
+[4.147105] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.147232] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.147421] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.147543] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.147744] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/libvesc_msgs__rosidl_generator_py.so\n'}
+[4.148021] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg\n'}
+[4.148468] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/__init__.py\n'}
+[4.148748] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_stamped.py\n'}
+[4.148996] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_stamped_s.c\n'}
+[4.149088] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state.py\n'}
+[4.149174] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu.py\n'}
+[4.149257] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_imu_s.c\n'}
+[4.149338] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_s.c\n'}
+[4.149419] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_stamped.py\n'}
+[4.149500] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg/_vesc_state_stamped_s.c\n'}
+[4.149581] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.149660] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.214456] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs'...\n"}
+[4.214777] (vesc_msgs) StdoutLine: {'line': b"Compiling '/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/__init__.py'...\n"}
+[4.214889] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/msg'...\n"}
+[4.214983] (-) TimerEvent: {}
+[4.223345] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.223728] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.223979] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.224380] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.224645] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.225167] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[4.226535] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_py.so\n'}
+[4.227132] (vesc_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_py.so" to ""\n'}
+[4.227784] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.idl\n'}
+[4.227977] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.idl\n'}
+[4.228128] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.idl\n'}
+[4.228255] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.idl\n'}
+[4.228393] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.msg\n'}
+[4.228541] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.msg\n'}
+[4.228729] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.msg\n'}
+[4.228865] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.msg\n'}
+[4.228957] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/ament_index/resource_index/package_run_dependencies/vesc_msgs\n'}
+[4.229509] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/ament_index/resource_index/parent_prefix_path/vesc_msgs\n'}
+[4.230057] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.sh\n'}
+[4.230512] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.dsv\n'}
+[4.231009] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/path.sh\n'}
+[4.231484] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/environment/path.dsv\n'}
+[4.231953] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/local_setup.bash\n'}
+[4.232102] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/local_setup.sh\n'}
+[4.232257] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/local_setup.zsh\n'}
+[4.232401] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/local_setup.dsv\n'}
+[4.232878] (vesc_msgs) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/package.dsv\n'}
+[4.233958] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/ament_index/resource_index/packages/vesc_msgs\n'}
+[4.235317] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport.cmake\n'}
+[4.235514] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.236395] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.236577] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.237480] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.237656] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.238517] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.238697] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.239524] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.240381] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.240557] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.241450] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.242365] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.242741] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.242859] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.243610] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.243727] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.243961] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.244061] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.244301] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.244399] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.244662] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.244761] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.244891] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.245019] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig.cmake\n'}
+[4.245152] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig-version.cmake\n'}
+[4.245288] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_msgs/share/vesc_msgs/package.xml\n'}
+[4.251663] (vesc_msgs) CommandEnded: {'returncode': 0}
+[4.310783] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 0}
+[4.313243] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[4.315354] (-) TimerEvent: {}
+[4.325470] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[4.336329] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[4.338578] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[4.339024] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/roboracer_ws/build/vesc_ackermann', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_ackermann', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_ackermann'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[4.344380] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[4.346657] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[4.347198] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/roboracer_ws/build/vesc_driver', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[4.389478] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[4.390806] (vesc_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[4.415455] (-) TimerEvent: {}
+[4.515883] (-) TimerEvent: {}
+[4.616293] (-) TimerEvent: {}
+[4.716710] (-) TimerEvent: {}
+[4.741106] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.744361] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.755097] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.768554] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.781278] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.785455] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.785754] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.795923] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.810498] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.816804] (-) TimerEvent: {}
+[4.827338] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.868400] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.870405] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.916968] (-) TimerEvent: {}
+[4.917344] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.919074] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.006707] (vesc_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.017021] (-) TimerEvent: {}
+[5.050479] (vesc_ackermann) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.117135] (-) TimerEvent: {}
+[5.193289] (vesc_driver) StdoutLine: {'line': b'-- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)\n'}
+[5.217247] (-) TimerEvent: {}
+[5.281193] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.288751] (vesc_ackermann) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[5.295147] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.296413] (vesc_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.297856] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.298161] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fabiocar/roboracer_ws/src/vesc/vesc_ackermann/include\n'}
+[5.298293] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.299458] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.299561] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.300059] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.301334] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.301443] (vesc_ackermann) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.301790] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.304449] (vesc_driver) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[5.307424] (vesc_ackermann) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.310486] (vesc_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.314428] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.314840] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fabiocar/roboracer_ws/src/vesc/vesc_driver/include\n'}
+[5.314951] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.316550] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.316690] (vesc_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.317165] (vesc_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.317255] (-) TimerEvent: {}
+[5.317843] (vesc_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.318549] (vesc_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[5.320143] (vesc_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.320331] (vesc_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.320762] (vesc_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.326189] (vesc_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.346776] (vesc_ackermann) StdoutLine: {'line': b'-- Generating done\n'}
+[5.359045] (vesc_ackermann) StdoutLine: {'line': b'-- Build files have been written to: /home/fabiocar/roboracer_ws/build/vesc_ackermann\n'}
+[5.403419] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_to_odom_node\x1b[0m\n'}
+[5.403820] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ackermann_to_vesc_node\x1b[0m\n'}
+[5.405803] (vesc_ackermann) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_ackermann\x1b[0m\n'}
+[5.407359] (vesc_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[5.417412] (-) TimerEvent: {}
+[5.422187] (vesc_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/fabiocar/roboracer_ws/build/vesc_driver\n'}
+[5.433303] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o\x1b[0m\n'}
+[5.433749] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o\x1b[0m\n'}
+[5.434401] (vesc_ackermann) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o\x1b[0m\n'}
+[5.443001] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\x1b[0m\n'}
+[5.469419] (vesc_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_driver_node\x1b[0m\n'}
+[5.471915] (vesc_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_driver\x1b[0m\n'}
+[5.492942] (vesc_driver) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o\x1b[0m\n'}
+[5.507224] (vesc_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o\x1b[0m\n'}
+[5.517573] (-) TimerEvent: {}
+[5.522222] (vesc_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o\x1b[0m\n'}
+[5.522592] (vesc_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o\x1b[0m\n'}
+[5.529639] (vesc_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o\x1b[0m\n'}
+[5.617730] (-) TimerEvent: {}
+[5.718278] (-) TimerEvent: {}
+[5.818842] (-) TimerEvent: {}
+[5.919403] (-) TimerEvent: {}
+[6.019962] (-) TimerEvent: {}
+[6.120517] (-) TimerEvent: {}
+[6.221084] (-) TimerEvent: {}
+[6.321661] (-) TimerEvent: {}
+[6.422220] (-) TimerEvent: {}
+[6.522781] (-) TimerEvent: {}
+[6.623321] (-) TimerEvent: {}
+[6.723873] (-) TimerEvent: {}
+[6.824450] (-) TimerEvent: {}
+[6.925031] (-) TimerEvent: {}
+[7.025584] (-) TimerEvent: {}
+[7.126134] (-) TimerEvent: {}
+[7.226680] (-) TimerEvent: {}
+[7.327220] (-) TimerEvent: {}
+[7.427771] (-) TimerEvent: {}
+[7.528317] (-) TimerEvent: {}
+[7.628869] (-) TimerEvent: {}
+[7.729416] (-) TimerEvent: {}
+[7.829963] (-) TimerEvent: {}
+[7.930503] (-) TimerEvent: {}
+[8.031064] (-) TimerEvent: {}
+[8.131636] (-) TimerEvent: {}
+[8.232199] (-) TimerEvent: {}
+[8.332722] (-) TimerEvent: {}
+[8.433261] (-) TimerEvent: {}
+[8.533786] (-) TimerEvent: {}
+[8.634327] (-) TimerEvent: {}
+[8.734877] (-) TimerEvent: {}
+[8.835432] (-) TimerEvent: {}
+[8.935985] (-) TimerEvent: {}
+[9.036556] (-) TimerEvent: {}
+[9.137119] (-) TimerEvent: {}
+[9.237669] (-) TimerEvent: {}
+[9.338218] (-) TimerEvent: {}
+[9.438772] (-) TimerEvent: {}
+[9.539318] (-) TimerEvent: {}
+[9.639871] (-) TimerEvent: {}
+[9.740420] (-) TimerEvent: {}
+[9.840966] (-) TimerEvent: {}
+[9.941506] (-) TimerEvent: {}
+[10.042051] (-) TimerEvent: {}
+[10.142598] (-) TimerEvent: {}
+[10.243140] (-) TimerEvent: {}
+[10.343687] (-) TimerEvent: {}
+[10.444234] (-) TimerEvent: {}
+[10.544806] (-) TimerEvent: {}
+[10.645270] (-) TimerEvent: {}
+[10.745810] (-) TimerEvent: {}
+[10.842433] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable vesc_to_odom_node\x1b[0m\n'}
+[10.845911] (-) TimerEvent: {}
+[10.865728] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable ackermann_to_vesc_node\x1b[0m\n'}
+[10.937880] (vesc_driver) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable vesc_driver_node\x1b[0m\n'}
+[10.946075] (-) TimerEvent: {}
+[11.046643] (-) TimerEvent: {}
+[11.095975] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Built target ackermann_to_vesc_node\n'}
+[11.096420] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Built target vesc_to_odom_node\n'}
+[11.138714] (vesc_driver) StdoutLine: {'line': b'[ 60%] Built target vesc_driver_node\n'}
+[11.146792] (-) TimerEvent: {}
+[11.247304] (-) TimerEvent: {}
+[11.347849] (-) TimerEvent: {}
+[11.448350] (-) TimerEvent: {}
+[11.548787] (-) TimerEvent: {}
+[11.649189] (-) TimerEvent: {}
+[11.749625] (-) TimerEvent: {}
+[11.850139] (-) TimerEvent: {}
+[11.950686] (-) TimerEvent: {}
+[12.051170] (-) TimerEvent: {}
+[12.151591] (-) TimerEvent: {}
+[12.252001] (-) TimerEvent: {}
+[12.352442] (-) TimerEvent: {}
+[12.452840] (-) TimerEvent: {}
+[12.553259] (-) TimerEvent: {}
+[12.653794] (-) TimerEvent: {}
+[12.754291] (-) TimerEvent: {}
+[12.854732] (-) TimerEvent: {}
+[12.955210] (-) TimerEvent: {}
+[13.055639] (-) TimerEvent: {}
+[13.156031] (-) TimerEvent: {}
+[13.256448] (-) TimerEvent: {}
+[13.356961] (-) TimerEvent: {}
+[13.457391] (-) TimerEvent: {}
+[13.557914] (-) TimerEvent: {}
+[13.658405] (-) TimerEvent: {}
+[13.758875] (-) TimerEvent: {}
+[13.859260] (-) TimerEvent: {}
+[13.959660] (-) TimerEvent: {}
+[14.060049] (-) TimerEvent: {}
+[14.160461] (-) TimerEvent: {}
+[14.260982] (-) TimerEvent: {}
+[14.361472] (-) TimerEvent: {}
+[14.461896] (-) TimerEvent: {}
+[14.562294] (-) TimerEvent: {}
+[14.662675] (-) TimerEvent: {}
+[14.763076] (-) TimerEvent: {}
+[14.863561] (-) TimerEvent: {}
+[14.964051] (-) TimerEvent: {}
+[15.064543] (-) TimerEvent: {}
+[15.165047] (-) TimerEvent: {}
+[15.265536] (-) TimerEvent: {}
+[15.366033] (-) TimerEvent: {}
+[15.466520] (-) TimerEvent: {}
+[15.567008] (-) TimerEvent: {}
+[15.667492] (-) TimerEvent: {}
+[15.767976] (-) TimerEvent: {}
+[15.868457] (-) TimerEvent: {}
+[15.968974] (-) TimerEvent: {}
+[16.069462] (-) TimerEvent: {}
+[16.169951] (-) TimerEvent: {}
+[16.270440] (-) TimerEvent: {}
+[16.370925] (-) TimerEvent: {}
+[16.471409] (-) TimerEvent: {}
+[16.571917] (-) TimerEvent: {}
+[16.672414] (-) TimerEvent: {}
+[16.772928] (-) TimerEvent: {}
+[16.873415] (-) TimerEvent: {}
+[16.974097] (-) TimerEvent: {}
+[17.074605] (-) TimerEvent: {}
+[17.175096] (-) TimerEvent: {}
+[17.275588] (-) TimerEvent: {}
+[17.376080] (-) TimerEvent: {}
+[17.476582] (-) TimerEvent: {}
+[17.577098] (-) TimerEvent: {}
+[17.677591] (-) TimerEvent: {}
+[17.778103] (-) TimerEvent: {}
+[17.878612] (-) TimerEvent: {}
+[17.979111] (-) TimerEvent: {}
+[18.079623] (-) TimerEvent: {}
+[18.180118] (-) TimerEvent: {}
+[18.280628] (-) TimerEvent: {}
+[18.381126] (-) TimerEvent: {}
+[18.481618] (-) TimerEvent: {}
+[18.582125] (-) TimerEvent: {}
+[18.682635] (-) TimerEvent: {}
+[18.783162] (-) TimerEvent: {}
+[18.883653] (-) TimerEvent: {}
+[18.984145] (-) TimerEvent: {}
+[19.084657] (-) TimerEvent: {}
+[19.185152] (-) TimerEvent: {}
+[19.285640] (-) TimerEvent: {}
+[19.386124] (-) TimerEvent: {}
+[19.486623] (-) TimerEvent: {}
+[19.587112] (-) TimerEvent: {}
+[19.687615] (-) TimerEvent: {}
+[19.788139] (-) TimerEvent: {}
+[19.888854] (-) TimerEvent: {}
+[19.989482] (-) TimerEvent: {}
+[20.090357] (-) TimerEvent: {}
+[20.191092] (-) TimerEvent: {}
+[20.291782] (-) TimerEvent: {}
+[20.392283] (-) TimerEvent: {}
+[20.492851] (-) TimerEvent: {}
+[20.593519] (-) TimerEvent: {}
+[20.694016] (-) TimerEvent: {}
+[22.127427] (-) TimerEvent: {}
+[22.156713] (ackermann_mux) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ackermann_mux\x1b[0m\n'}
+[22.227588] (-) TimerEvent: {}
+[22.328112] (-) TimerEvent: {}
+[22.428583] (-) TimerEvent: {}
+[22.529096] (-) TimerEvent: {}
+[22.629513] (-) TimerEvent: {}
+[22.729891] (-) TimerEvent: {}
+[22.830259] (-) TimerEvent: {}
+[22.930621] (-) TimerEvent: {}
+[23.031002] (-) TimerEvent: {}
+[23.123100] (ackermann_mux) StdoutLine: {'line': b'[100%] Built target ackermann_mux\n'}
+[23.131131] (-) TimerEvent: {}
+[23.142170] (ackermann_mux) CommandEnded: {'returncode': 0}
+[23.143477] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'install'}
+[23.143910] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/roboracer_ws/build/ackermann_mux'], 'cwd': '/home/fabiocar/roboracer_ws/build/ackermann_mux', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/ackermann_mux'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[23.158878] (ackermann_mux) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.161804] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux\n'}
+[23.173076] (ackermann_mux) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux" to ""\n'}
+[23.173379] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch\n'}
+[23.173605] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py\n'}
+[23.173728] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config\n'}
+[23.174112] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml\n'}
+[23.174249] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml\n'}
+[23.174356] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml\n'}
+[23.174440] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include\n'}
+[23.174650] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux\n'}
+[23.175026] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp\n'}
+[23.175153] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp\n'}
+[23.175290] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp\n'}
+[23.175393] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp\n'}
+[23.175513] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp\n'}
+[23.175598] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp\n'}
+[23.175678] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux\n'}
+[23.175805] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux\n'}
+[23.176201] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh\n'}
+[23.176478] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv\n'}
+[23.176814] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh\n'}
+[23.177082] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv\n'}
+[23.177375] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash\n'}
+[23.177487] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh\n'}
+[23.177597] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh\n'}
+[23.177701] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv\n'}
+[23.177881] (ackermann_mux) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.dsv\n'}
+[23.178476] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux\n'}
+[23.178860] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[23.178967] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[23.179076] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake\n'}
+[23.179192] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake\n'}
+[23.179278] (ackermann_mux) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/ackermann_mux/share/ackermann_mux/package.xml\n'}
+[23.182378] (ackermann_mux) CommandEnded: {'returncode': 0}
+[23.203891] (ackermann_mux) JobEnded: {'identifier': 'ackermann_mux', 'rc': 0}
+[23.231225] (-) TimerEvent: {}
+[23.320706] (vesc_driver) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_driver.so\x1b[0m\n'}
+[23.331334] (-) TimerEvent: {}
+[23.431989] (-) TimerEvent: {}
+[23.532724] (-) TimerEvent: {}
+[23.633253] (-) TimerEvent: {}
+[23.733883] (-) TimerEvent: {}
+[23.834765] (-) TimerEvent: {}
+[23.935489] (-) TimerEvent: {}
+[24.036182] (-) TimerEvent: {}
+[24.136905] (-) TimerEvent: {}
+[24.237584] (-) TimerEvent: {}
+[24.338268] (-) TimerEvent: {}
+[24.438940] (-) TimerEvent: {}
+[24.472876] (vesc_driver) StdoutLine: {'line': b'[ 70%] Built target vesc_driver\n'}
+[24.491876] (vesc_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vesc_device_namer\x1b[0m\n'}
+[24.515658] (vesc_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o\x1b[0m\n'}
+[24.515967] (vesc_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o\x1b[0m\n'}
+[24.539092] (-) TimerEvent: {}
+[24.639616] (-) TimerEvent: {}
+[24.740318] (-) TimerEvent: {}
+[24.841040] (-) TimerEvent: {}
+[24.941750] (-) TimerEvent: {}
+[25.042457] (-) TimerEvent: {}
+[25.143194] (-) TimerEvent: {}
+[25.243918] (-) TimerEvent: {}
+[25.300122] (vesc_ackermann) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_ackermann.so\x1b[0m\n'}
+[25.344242] (-) TimerEvent: {}
+[25.444965] (-) TimerEvent: {}
+[25.545678] (-) TimerEvent: {}
+[25.646194] (-) TimerEvent: {}
+[25.651167] (vesc_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vesc_device_namer\x1b[0m\n'}
+[25.746330] (-) TimerEvent: {}
+[25.847082] (-) TimerEvent: {}
+[25.947835] (-) TimerEvent: {}
+[26.048564] (-) TimerEvent: {}
+[26.147347] (vesc_driver) StdoutLine: {'line': b'[100%] Built target vesc_device_namer\n'}
+[26.148630] (-) TimerEvent: {}
+[26.168103] (vesc_driver) CommandEnded: {'returncode': 0}
+[26.169558] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'install'}
+[26.170411] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/roboracer_ws/build/vesc_driver'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[26.185369] (vesc_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.187199] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node\n'}
+[26.188551] (vesc_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node" to ""\n'}
+[26.188792] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include\n'}
+[26.189088] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver\n'}
+[26.189462] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/crc.hpp\n'}
+[26.189752] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp\n'}
+[26.189946] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp\n'}
+[26.190135] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp\n'}
+[26.190315] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp\n'}
+[26.190465] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp\n'}
+[26.190632] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp\n'}
+[26.190801] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh\n'}
+[26.190950] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv\n'}
+[26.191860] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/lib/libvesc_driver.so\n'}
+[26.206636] (vesc_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_driver/lib/libvesc_driver.so" to ""\n'}
+[26.207992] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer\n'}
+[26.208754] (vesc_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer" to ""\n'}
+[26.209126] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/launch\n'}
+[26.209444] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py\n'}
+[26.209742] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/params\n'}
+[26.210079] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml\n'}
+[26.210319] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver\n'}
+[26.210605] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver\n'}
+[26.210891] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh\n'}
+[26.211171] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv\n'}
+[26.211451] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/path.sh\n'}
+[26.211732] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv\n'}
+[26.212091] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/local_setup.bash\n'}
+[26.212371] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/local_setup.sh\n'}
+[26.212612] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh\n'}
+[26.212850] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv\n'}
+[26.213125] (vesc_driver) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/package.dsv\n'}
+[26.213397] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver\n'}
+[26.213656] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver\n'}
+[26.214055] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.214290] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.214539] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.214758] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake\n'}
+[26.214973] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake\n'}
+[26.215185] (vesc_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_driver/share/vesc_driver/package.xml\n'}
+[26.217074] (vesc_driver) CommandEnded: {'returncode': 0}
+[26.248773] (-) TimerEvent: {}
+[26.274794] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 0}
+[26.348889] (-) TimerEvent: {}
+[26.449516] (-) TimerEvent: {}
+[26.550181] (-) TimerEvent: {}
+[26.650840] (-) TimerEvent: {}
+[26.751481] (-) TimerEvent: {}
+[26.852129] (-) TimerEvent: {}
+[26.892232] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[26.914665] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[26.916990] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[26.917849] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/roboracer_ws/build/vesc_ackermann'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc_ackermann', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc_ackermann'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[26.933694] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.936138] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[26.937585] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node" to ""\n'}
+[26.938941] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[26.939996] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node" to ""\n'}
+[26.940321] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/include\n'}
+[26.940727] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/include/vesc_ackermann\n'}
+[26.941124] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[26.941479] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[26.941779] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[26.942017] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[26.943820] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[26.952215] (-) TimerEvent: {}
+[26.970182] (vesc_ackermann) StdoutLine: {'line': b'-- Set runtime path of "/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib/libvesc_ackermann.so" to ""\n'}
+[26.970579] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/launch\n'}
+[26.971721] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[26.972110] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[26.972362] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[26.972701] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[26.972998] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[26.973296] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[26.973673] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[26.974082] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[26.974386] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[26.974619] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[26.974841] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[26.975129] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[26.975358] (vesc_ackermann) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[26.975639] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[26.975969] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[26.976349] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.976636] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.976881] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.977103] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[26.977320] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[26.977536] (vesc_ackermann) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[26.979537] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[27.037306] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[27.044014] (vesc) JobStarted: {'identifier': 'vesc'}
+[27.052483] (-) TimerEvent: {}
+[27.074462] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'cmake'}
+[27.076763] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'build'}
+[27.077478] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/roboracer_ws/build/vesc', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[27.150409] (vesc) CommandEnded: {'returncode': 0}
+[27.152615] (-) TimerEvent: {}
+[27.153736] (vesc) JobProgress: {'identifier': 'vesc', 'progress': 'install'}
+[27.154379] (vesc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/roboracer_ws/build/vesc'], 'cwd': '/home/fabiocar/roboracer_ws/build/vesc', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'de_CH.UTF-8'), ('SYSTEMD_EXEC_PID', '3123'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'fabiocar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1004/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1004/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1004/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/roboracer_ws/build/vesc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[27.170318] (vesc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.170826] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc\n'}
+[27.171119] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc\n'}
+[27.171373] (vesc) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh\n'}
+[27.171712] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv\n'}
+[27.172047] (vesc) StdoutLine: {'line': b'-- Installing: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/environment/path.sh\n'}
+[27.172357] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/environment/path.dsv\n'}
+[27.172589] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/local_setup.bash\n'}
+[27.172899] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/local_setup.sh\n'}
+[27.173196] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/local_setup.zsh\n'}
+[27.173457] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/local_setup.dsv\n'}
+[27.173681] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/package.dsv\n'}
+[27.173900] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/ament_index/resource_index/packages/vesc\n'}
+[27.174120] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/cmake/vescConfig.cmake\n'}
+[27.174336] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake\n'}
+[27.174550] (vesc) StdoutLine: {'line': b'-- Up-to-date: /home/fabiocar/roboracer_ws/install/vesc/share/vesc/package.xml\n'}
+[27.176430] (vesc) CommandEnded: {'returncode': 0}
+[27.222306] (vesc) JobEnded: {'identifier': 'vesc', 'rc': 0}
+[27.225321] (f1tenth_stack) JobStarted: {'identifier': 'f1tenth_stack'}
+[27.252697] (-) TimerEvent: {}
+[27.353074] (-) TimerEvent: {}
+[27.453790] (-) TimerEvent: {}
+[27.554275] (-) TimerEvent: {}
+[27.654773] (-) TimerEvent: {}
+[27.755322] (-) TimerEvent: {}
+[27.855907] (-) TimerEvent: {}
+[27.956531] (-) TimerEvent: {}
+[28.057180] (-) TimerEvent: {}
+[28.157794] (-) TimerEvent: {}
+[28.172317] (f1tenth_stack) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/f1tenth_stack', 'build', '--build-base', '/home/fabiocar/roboracer_ws/build/f1tenth_stack/build', 'install', '--record', '/home/fabiocar/roboracer_ws/build/f1tenth_stack/install.log', '--install-scripts', '$base/lib/f1tenth_stack', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fabiocar/roboracer_ws/src/f1tenth_system/f1tenth_stack', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'fabiocar', 'LC_TIME': 'de_CH.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/fabiocar', 'OLDPWD': '/home/fabiocar', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.4.7', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson AGX Orin Developer Kit', 'LC_MONETARY': 'de_CH.UTF-8', 'SYSTEMD_EXEC_PID': '3123', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'fabiocar', 'JETSON_MODULE': 'NVIDIA Jetson AGX Orin (64GB ram)', 'JETSON_SERIAL_NUMBER': '1422625029748', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'fabiocar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jetson-orin:@/tmp/.ICE-unix/2928,unix/jetson-orin:/tmp/.ICE-unix/2928', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_CH.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f2961792_1253_446c_b012_6c1a994c6999', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_CH.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.91', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_CH.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_CH.UTF-8', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'de_CH.UTF-8', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/fabiocar/roboracer_ws/build/f1tenth_stack', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fabiocar/roboracer_ws/build/f1tenth_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_CH.UTF-8', 'LC_PAPER': 'de_CH.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux', 'JETSON_P_NUMBER': 'p3701-0005'}, 'shell': False}
+[28.257902] (-) TimerEvent: {}
+[28.358350] (-) TimerEvent: {}
+[28.377712] (f1tenth_stack) StderrLine: {'line': b"/usr/local/lib/python3.10/dist-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[28.378137] (f1tenth_stack) StderrLine: {'line': b'!!\n'}
+[28.378405] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.378640] (f1tenth_stack) StderrLine: {'line': b'        ********************************************************************************\n'}
+[28.378868] (f1tenth_stack) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[28.379088] (f1tenth_stack) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[28.379305] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.379514] (f1tenth_stack) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[28.379723] (f1tenth_stack) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[28.379926] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.380130] (f1tenth_stack) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[28.380334] (f1tenth_stack) StderrLine: {'line': b'        ********************************************************************************\n'}
+[28.380535] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.380806] (f1tenth_stack) StderrLine: {'line': b'!!\n'}
+[28.381019] (f1tenth_stack) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[28.401547] (f1tenth_stack) StderrLine: {'line': b"/usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[28.401799] (f1tenth_stack) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[28.445240] (f1tenth_stack) StderrLine: {'line': b"/usr/local/lib/python3.10/dist-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[28.445524] (f1tenth_stack) StderrLine: {'line': b'!!\n'}
+[28.445743] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.445953] (f1tenth_stack) StderrLine: {'line': b'        ********************************************************************************\n'}
+[28.446160] (f1tenth_stack) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[28.446364] (f1tenth_stack) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[28.446565] (f1tenth_stack) StderrLine: {'line': b'        (Affected: f1tenth_stack).\n'}
+[28.446764] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.446962] (f1tenth_stack) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[28.447163] (f1tenth_stack) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[28.447363] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.447561] (f1tenth_stack) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[28.447761] (f1tenth_stack) StderrLine: {'line': b'        ********************************************************************************\n'}
+[28.447960] (f1tenth_stack) StderrLine: {'line': b'\n'}
+[28.448157] (f1tenth_stack) StderrLine: {'line': b'!!\n'}
+[28.448351] (f1tenth_stack) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[28.458438] (-) TimerEvent: {}
+[28.534305] (f1tenth_stack) StdoutLine: {'line': b'running egg_info\n'}
+[28.555661] (f1tenth_stack) StdoutLine: {'line': b'writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO\n'}
+[28.557905] (f1tenth_stack) StdoutLine: {'line': b'writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt\n'}
+[28.558305] (f1tenth_stack) StdoutLine: {'line': b'writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt\n'}
+[28.558555] (-) TimerEvent: {}
+[28.558901] (f1tenth_stack) StdoutLine: {'line': b'writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt\n'}
+[28.559181] (f1tenth_stack) StdoutLine: {'line': b'writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt\n'}
+[28.605736] (f1tenth_stack) StdoutLine: {'line': b"reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[28.608123] (f1tenth_stack) StdoutLine: {'line': b"writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[28.608407] (f1tenth_stack) StdoutLine: {'line': b'running build\n'}
+[28.608726] (f1tenth_stack) StdoutLine: {'line': b'running build_py\n'}
+[28.609761] (f1tenth_stack) StdoutLine: {'line': b'copying f1tenth_stack/__init__.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack\n'}
+[28.610071] (f1tenth_stack) StdoutLine: {'line': b'copying f1tenth_stack/tf_publisher.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack\n'}
+[28.610613] (f1tenth_stack) StdoutLine: {'line': b'copying f1tenth_stack/throttle_interpolator.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack\n'}
+[28.611380] (f1tenth_stack) StdoutLine: {'line': b'running install\n'}
+[28.617312] (f1tenth_stack) StdoutLine: {'line': b'running install_lib\n'}
+[28.641752] (f1tenth_stack) StdoutLine: {'line': b'running install_data\n'}
+[28.642423] (f1tenth_stack) StdoutLine: {'line': b'copying resource/f1tenth_stack -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/ament_index/resource_index/packages\n'}
+[28.642770] (f1tenth_stack) StdoutLine: {'line': b'copying package.xml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack\n'}
+[28.643425] (f1tenth_stack) StdoutLine: {'line': b'copying launch/bringup_launch.py -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/launch\n'}
+[28.644412] (f1tenth_stack) StdoutLine: {'line': b'copying config/f1tenth_online_async.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[28.644948] (f1tenth_stack) StdoutLine: {'line': b'copying config/mux.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[28.645462] (f1tenth_stack) StdoutLine: {'line': b'copying config/joy_teleop.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[28.645965] (f1tenth_stack) StdoutLine: {'line': b'copying config/sensors.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[28.646475] (f1tenth_stack) StdoutLine: {'line': b'copying config/vesc.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[28.646940] (f1tenth_stack) StdoutLine: {'line': b'running install_egg_info\n'}
+[28.658649] (-) TimerEvent: {}
+[28.670196] (f1tenth_stack) StdoutLine: {'line': b"removing '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages/f1tenth_stack-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[28.670678] (f1tenth_stack) StdoutLine: {'line': b'Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages/f1tenth_stack-0.0.1-py3.10.egg-info\n'}
+[28.672357] (f1tenth_stack) StdoutLine: {'line': b'running install_scripts\n'}
+[28.718510] (f1tenth_stack) StdoutLine: {'line': b'Installing tf_publisher script to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[28.719168] (f1tenth_stack) StdoutLine: {'line': b'Installing throttle_interpolator script to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[28.719823] (f1tenth_stack) StdoutLine: {'line': b"writing list of installed files to '/home/fabiocar/roboracer_ws/build/f1tenth_stack/install.log'\n"}
+[28.758746] (-) TimerEvent: {}
+[28.765586] (f1tenth_stack) CommandEnded: {'returncode': 0}
+[28.791842] (f1tenth_stack) JobEnded: {'identifier': 'f1tenth_stack', 'rc': 0}
+[28.794350] (-) EventReactorShutdown: {}

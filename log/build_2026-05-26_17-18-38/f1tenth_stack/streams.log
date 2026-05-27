@@ -1,0 +1,66 @@
+[0.951s] Invoking command in '/home/fabiocar/roboracer_ws/src/f1tenth_system/f1tenth_stack': PYTHONPATH=/home/fabiocar/roboracer_ws/build/f1tenth_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/f1tenth_stack build --build-base /home/fabiocar/roboracer_ws/build/f1tenth_stack/build install --record /home/fabiocar/roboracer_ws/build/f1tenth_stack/install.log --install-scripts $base/lib/f1tenth_stack --single-version-externally-managed install_data
+[1.153s] /usr/local/lib/python3.10/dist-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[1.153s] !!
+[1.153s] 
+[1.153s]         ********************************************************************************
+[1.154s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.154s]         versions. Please use the underscore name 'script_dir' instead.
+[1.154s] 
+[1.154s]         This deprecation is overdue, please update your project and remove deprecated
+[1.154s]         calls to avoid build errors in the future.
+[1.155s] 
+[1.155s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.155s]         ********************************************************************************
+[1.155s] 
+[1.156s] !!
+[1.156s]   opt = self._enforce_underscore(opt, section)
+[1.176s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.177s]   warnings.warn(msg)
+[1.220s] /usr/local/lib/python3.10/dist-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[1.220s] !!
+[1.220s] 
+[1.221s]         ********************************************************************************
+[1.221s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.221s]         versions. Please use the underscore name 'script_dir' instead.
+[1.221s]         (Affected: f1tenth_stack).
+[1.221s] 
+[1.222s]         This deprecation is overdue, please update your project and remove deprecated
+[1.222s]         calls to avoid build errors in the future.
+[1.222s] 
+[1.222s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.222s]         ********************************************************************************
+[1.223s] 
+[1.223s] !!
+[1.223s]   opt = self._enforce_underscore(opt, section)
+[1.309s] running egg_info
+[1.330s] writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO
+[1.333s] writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt
+[1.333s] writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt
+[1.334s] writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt
+[1.334s] writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt
+[1.380s] reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'
+[1.383s] writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'
+[1.383s] running build
+[1.383s] running build_py
+[1.384s] copying f1tenth_stack/__init__.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack
+[1.385s] copying f1tenth_stack/tf_publisher.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack
+[1.385s] copying f1tenth_stack/throttle_interpolator.py -> /home/fabiocar/roboracer_ws/build/f1tenth_stack/build/lib/f1tenth_stack
+[1.386s] running install
+[1.392s] running install_lib
+[1.416s] running install_data
+[1.417s] copying resource/f1tenth_stack -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/ament_index/resource_index/packages
+[1.417s] copying package.xml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack
+[1.418s] copying launch/bringup_launch.py -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/launch
+[1.419s] copying config/f1tenth_online_async.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config
+[1.420s] copying config/mux.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config
+[1.420s] copying config/joy_teleop.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config
+[1.421s] copying config/sensors.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config
+[1.421s] copying config/vesc.yaml -> /home/fabiocar/roboracer_ws/install/f1tenth_stack/share/f1tenth_stack/config
+[1.422s] running install_egg_info
+[1.445s] removing '/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages/f1tenth_stack-0.0.1-py3.10.egg-info' (and everything under it)
+[1.445s] Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages/f1tenth_stack-0.0.1-py3.10.egg-info
+[1.447s] running install_scripts
+[1.493s] Installing tf_publisher script to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/f1tenth_stack
+[1.494s] Installing throttle_interpolator script to /home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/f1tenth_stack
+[1.495s] writing list of installed files to '/home/fabiocar/roboracer_ws/build/f1tenth_stack/install.log'
+[1.541s] Invoked command in '/home/fabiocar/roboracer_ws/src/f1tenth_system/f1tenth_stack' returned '0': PYTHONPATH=/home/fabiocar/roboracer_ws/build/f1tenth_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/f1tenth_stack build --build-base /home/fabiocar/roboracer_ws/build/f1tenth_stack/build install --record /home/fabiocar/roboracer_ws/build/f1tenth_stack/install.log --install-scripts $base/lib/f1tenth_stack --single-version-externally-managed install_data

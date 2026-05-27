@@ -1,0 +1,31 @@
+[1.330s] Invoking command in '/home/fabiocar/roboracer_ws/src/mpc_controller': PYTHONPATH=/home/fabiocar/roboracer_ws/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mpc_controller build --build-base /home/fabiocar/roboracer_ws/build/mpc_controller/build install --record /home/fabiocar/roboracer_ws/build/mpc_controller/install.log --single-version-externally-managed install_data
+[1.699s] running egg_info
+[1.722s] writing ../../build/mpc_controller/mpc_controller.egg-info/PKG-INFO
+[1.723s] writing dependency_links to ../../build/mpc_controller/mpc_controller.egg-info/dependency_links.txt
+[1.724s] writing entry points to ../../build/mpc_controller/mpc_controller.egg-info/entry_points.txt
+[1.724s] writing requirements to ../../build/mpc_controller/mpc_controller.egg-info/requires.txt
+[1.724s] writing top-level names to ../../build/mpc_controller/mpc_controller.egg-info/top_level.txt
+[1.781s] reading manifest file '../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+[1.784s] writing manifest file '../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+[1.784s] running build
+[1.784s] running build_py
+[1.786s] copying mpc_controller/frenet_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller
+[1.786s] copying mpc_controller/__init__.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller
+[1.787s] copying mpc_controller/kinematic_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller
+[1.787s] copying mpc_controller/mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller
+[1.788s] copying mpc_controller/trajectory_mpc_node.py -> /home/fabiocar/roboracer_ws/build/mpc_controller/build/lib/mpc_controller
+[1.789s] running install
+[1.796s] running install_lib
+[1.821s] running install_data
+[1.822s] copying resource/mpc_controller -> /home/fabiocar/roboracer_ws/install/mpc_controller/share/ament_index/resource_index/packages
+[1.823s] copying package.xml -> /home/fabiocar/roboracer_ws/install/mpc_controller/share/mpc_controller
+[1.823s] running install_egg_info
+[1.848s] removing '/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.848s] Copying ../../build/mpc_controller/mpc_controller.egg-info to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info
+[1.857s] running install_scripts
+[1.907s] Installing frenet_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller
+[1.908s] Installing kinematic_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller
+[1.908s] Installing mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller
+[1.909s] Installing trajectory_mpc_node script to /home/fabiocar/roboracer_ws/install/mpc_controller/lib/mpc_controller
+[1.909s] writing list of installed files to '/home/fabiocar/roboracer_ws/build/mpc_controller/install.log'
+[1.959s] Invoked command in '/home/fabiocar/roboracer_ws/src/mpc_controller' returned '0': PYTHONPATH=/home/fabiocar/roboracer_ws/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mpc_controller build --build-base /home/fabiocar/roboracer_ws/build/mpc_controller/build install --record /home/fabiocar/roboracer_ws/build/mpc_controller/install.log --single-version-externally-managed install_data

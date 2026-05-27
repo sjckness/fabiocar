@@ -1,0 +1,9 @@
+{
+  "package_name": "vesc_msgs",
+  "non_idl_tuples": [
+    "/home/fabiocar/roboracer_ws/src/vesc/vesc_msgs:msg/VescState.msg",
+    "/home/fabiocar/roboracer_ws/src/vesc/vesc_msgs:msg/VescStateStamped.msg",
+    "/home/fabiocar/roboracer_ws/src/vesc/vesc_msgs:msg/VescImu.msg",
+    "/home/fabiocar/roboracer_ws/src/vesc/vesc_msgs:msg/VescImuStamped.msg"
+  ]
+}
