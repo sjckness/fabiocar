@@ -1,9 +1,9 @@
 [submodule "src/ackermann_mux"]
 	path = src/ackermann_mux
-	url = https://github.com/f1tenth/ackermann_mux.git
+	url = https://github.com/sjckness/ackermann_mux.git
 [submodule "src/f1tenth_system"]
 	path = src/f1tenth_system
-	url = https://github.com/f1tenth/f1tenth_system.git
+	url = https://github.com/sjckness/f1tenth_system.git
 [submodule "src/vesc"]
 	path = src/vesc
-	url = https://github.com/f1tenth/vesc.git
+	url = https://github.com/sjckness/vesc.git
