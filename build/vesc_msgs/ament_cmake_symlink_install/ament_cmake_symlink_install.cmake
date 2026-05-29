@@ -369,11 +369,23 @@ ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/ve
 # install(FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
 ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
 
+# install(FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImu.idl" "DESTINATION" "share/vesc_msgs/msg")
+
+# install(FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/build/vesc_msgs/rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl" "DESTINATION" "share/vesc_msgs/msg")
+
 # install(FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
 ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescState.msg" "DESTINATION" "share/vesc_msgs/msg")
 
 # install(FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
 ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
+
+# install(FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescImu.msg" "DESTINATION" "share/vesc_msgs/msg")
+
+# install(FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
+ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs" FILES "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescImuStamped.msg" "DESTINATION" "share/vesc_msgs/msg")
 
 # install("TARGETS" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/fabiocar/fabiocar/build/vesc_msgs/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")

@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "rclcpp;rclcpp_components;std_msgs;vesc_msgs;serial_driver")
+set(_exported_dependencies "rclcpp;rclcpp_components;std_msgs;geometry_msgs;vesc_msgs;serial_driver;sensor_msgs")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

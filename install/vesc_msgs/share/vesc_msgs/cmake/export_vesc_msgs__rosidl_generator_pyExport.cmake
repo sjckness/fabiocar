@@ -54,7 +54,7 @@ endif()
 add_library(vesc_msgs::vesc_msgs__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(vesc_msgs::vesc_msgs__rosidl_generator_py PROPERTIES
-  INTERFACE_LINK_LIBRARIES "vesc_msgs::vesc_msgs__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.10.so;vesc_msgs::vesc_msgs__rosidl_typesupport_c;builtin_interfaces::builtin_interfaces__rosidl_generator_py;std_msgs::std_msgs__rosidl_generator_py"
+  INTERFACE_LINK_LIBRARIES "vesc_msgs::vesc_msgs__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.10.so;vesc_msgs::vesc_msgs__rosidl_typesupport_c;builtin_interfaces::builtin_interfaces__rosidl_generator_py;std_msgs::std_msgs__rosidl_generator_py;geometry_msgs::geometry_msgs__rosidl_generator_py"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

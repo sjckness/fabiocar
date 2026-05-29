@@ -211,4 +211,12 @@ CMakeFiles/vesc_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vesc_m
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.h
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__type_support.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h \
+ /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h

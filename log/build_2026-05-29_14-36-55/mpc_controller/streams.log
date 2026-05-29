@@ -1,0 +1,46 @@
+[1.440s] Invoking command in '/home/fabiocar/fabiocar/build/mpc_controller': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/fabiocar/fabiocar/build/mpc_controller/build
+[1.935s] running develop
+[2.276s] Removing /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc-controller.egg-link (link to .)
+[2.363s] Invoked command in '/home/fabiocar/fabiocar/build/mpc_controller' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/fabiocar/fabiocar/build/mpc_controller/build
+[2.365s] Invoking command in '/home/fabiocar/fabiocar/src/f1tenth_system/mpc_controller': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mpc_controller build --build-base /home/fabiocar/fabiocar/build/mpc_controller/build install --record /home/fabiocar/fabiocar/build/mpc_controller/install.log --single-version-externally-managed install_data --force
+[2.770s] running egg_info
+[2.793s] writing ../../../build/mpc_controller/mpc_controller.egg-info/PKG-INFO
+[2.795s] writing dependency_links to ../../../build/mpc_controller/mpc_controller.egg-info/dependency_links.txt
+[2.795s] writing entry points to ../../../build/mpc_controller/mpc_controller.egg-info/entry_points.txt
+[2.795s] writing requirements to ../../../build/mpc_controller/mpc_controller.egg-info/requires.txt
+[2.796s] writing top-level names to ../../../build/mpc_controller/mpc_controller.egg-info/top_level.txt
+[2.845s] reading manifest file '../../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+[2.848s] writing manifest file '../../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+[2.848s] running build
+[2.848s] running build_py
+[2.848s] creating /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.849s] copying mpc_controller/__init__.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.849s] copying mpc_controller/mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.849s] copying mpc_controller/frenet_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.849s] copying mpc_controller/kinematic_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.850s] copying mpc_controller/trajectory_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+[2.850s] running install
+[2.856s] running install_lib
+[2.881s] creating /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.881s] copying /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller/__init__.py -> /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.881s] copying /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller/mpc_node.py -> /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.881s] copying /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller/frenet_mpc_node.py -> /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.881s] copying /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller/kinematic_mpc_node.py -> /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.882s] copying /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller/trajectory_mpc_node.py -> /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller
+[2.883s] byte-compiling /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller/__init__.py to __init__.cpython-310.pyc
+[2.883s] byte-compiling /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller/mpc_node.py to mpc_node.cpython-310.pyc
+[2.884s] byte-compiling /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller/frenet_mpc_node.py to frenet_mpc_node.cpython-310.pyc
+[2.887s] byte-compiling /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller/kinematic_mpc_node.py to kinematic_mpc_node.cpython-310.pyc
+[2.888s] byte-compiling /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller/trajectory_mpc_node.py to trajectory_mpc_node.cpython-310.pyc
+[2.889s] running install_data
+[2.890s] copying resource/mpc_controller -> /home/fabiocar/fabiocar/install/mpc_controller/share/ament_index/resource_index/packages
+[2.890s] copying package.xml -> /home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller
+[2.890s] running install_egg_info
+[2.919s] Copying ../../../build/mpc_controller/mpc_controller.egg-info to /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info
+[2.921s] running install_scripts
+[3.133s] Installing frenet_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+[3.133s] Installing kinematic_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+[3.135s] Installing mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+[3.136s] Installing trajectory_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+[3.137s] writing list of installed files to '/home/fabiocar/fabiocar/build/mpc_controller/install.log'
+[3.213s] Invoked command in '/home/fabiocar/fabiocar/src/f1tenth_system/mpc_controller' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/mpc_controller build --build-base /home/fabiocar/fabiocar/build/mpc_controller/build install --record /home/fabiocar/fabiocar/build/mpc_controller/install.log --single-version-externally-managed install_data --force

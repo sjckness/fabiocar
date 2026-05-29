@@ -1,0 +1,15 @@
+/home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+/home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+/home/fabiocar/fabiocar/install/vesc/share/vesc/environment/ament_prefix_path.sh
+/home/fabiocar/fabiocar/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+/home/fabiocar/fabiocar/install/vesc/share/vesc/environment/path.sh
+/home/fabiocar/fabiocar/install/vesc/share/vesc/environment/path.dsv
+/home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.bash
+/home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.sh
+/home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.zsh
+/home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.dsv
+/home/fabiocar/fabiocar/install/vesc/share/vesc/package.dsv
+/home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/packages/vesc
+/home/fabiocar/fabiocar/install/vesc/share/vesc/cmake/vescConfig.cmake
+/home/fabiocar/fabiocar/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+/home/fabiocar/fabiocar/install/vesc/share/vesc/package.xml

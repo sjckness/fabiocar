@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_driver
 # The main recursive "all" target.
 all: CMakeFiles/vesc_driver.dir/all
 all: CMakeFiles/vesc_driver_node.dir/all
+all: CMakeFiles/vesc_device_namer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/vesc_driver_uninstall.dir/clean
 clean: CMakeFiles/vesc_driver.dir/clean
 clean: CMakeFiles/vesc_driver_node.dir/clean
+clean: CMakeFiles/vesc_device_namer.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -137,7 +139,7 @@ CMakeFiles/vesc_driver_uninstall.dir/clean:
 CMakeFiles/vesc_driver.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver.dir/build.make CMakeFiles/vesc_driver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver.dir/build.make CMakeFiles/vesc_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles --progress-num=1,2,3,4,5 "Built target vesc_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles --progress-num=4,5,6,7,8 "Built target vesc_driver"
 .PHONY : CMakeFiles/vesc_driver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -163,7 +165,7 @@ CMakeFiles/vesc_driver.dir/clean:
 CMakeFiles/vesc_driver_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver_node.dir/build.make CMakeFiles/vesc_driver_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver_node.dir/build.make CMakeFiles/vesc_driver_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles --progress-num=6,7 "Built target vesc_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles --progress-num=9,10 "Built target vesc_driver_node"
 .PHONY : CMakeFiles/vesc_driver_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +183,32 @@ vesc_driver_node: CMakeFiles/vesc_driver_node.dir/rule
 CMakeFiles/vesc_driver_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver_node.dir/build.make CMakeFiles/vesc_driver_node.dir/clean
 .PHONY : CMakeFiles/vesc_driver_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vesc_device_namer.dir
+
+# All Build rule for target.
+CMakeFiles/vesc_device_namer.dir/all: CMakeFiles/vesc_driver.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles --progress-num=1,2,3 "Built target vesc_device_namer"
+.PHONY : CMakeFiles/vesc_device_namer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vesc_device_namer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vesc_device_namer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles 0
+.PHONY : CMakeFiles/vesc_device_namer.dir/rule
+
+# Convenience name for target.
+vesc_device_namer: CMakeFiles/vesc_device_namer.dir/rule
+.PHONY : vesc_device_namer
+
+# clean rule for target.
+CMakeFiles/vesc_device_namer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/clean
+.PHONY : CMakeFiles/vesc_device_namer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

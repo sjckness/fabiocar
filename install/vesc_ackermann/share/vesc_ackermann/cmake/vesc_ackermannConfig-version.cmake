@@ -1,0 +1,1 @@
+/home/fabiocar/fabiocar/build/vesc_ackermann/ament_cmake_core/vesc_ackermannConfig-version.cmake

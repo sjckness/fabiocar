@@ -1,0 +1,29 @@
+running egg_info
+writing ../../../build/mpc_controller/mpc_controller.egg-info/PKG-INFO
+writing dependency_links to ../../../build/mpc_controller/mpc_controller.egg-info/dependency_links.txt
+writing entry points to ../../../build/mpc_controller/mpc_controller.egg-info/entry_points.txt
+writing requirements to ../../../build/mpc_controller/mpc_controller.egg-info/requires.txt
+writing top-level names to ../../../build/mpc_controller/mpc_controller.egg-info/top_level.txt
+reading manifest file '../../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+writing manifest file '../../../build/mpc_controller/mpc_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying mpc_controller/__init__.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+copying mpc_controller/mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+copying mpc_controller/frenet_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+copying mpc_controller/kinematic_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+copying mpc_controller/trajectory_mpc_node.py -> /home/fabiocar/fabiocar/build/mpc_controller/build/lib/mpc_controller
+running install
+running install_lib
+running install_data
+copying resource/mpc_controller -> /home/fabiocar/fabiocar/install/mpc_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller
+running install_egg_info
+removing '/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/mpc_controller/mpc_controller.egg-info to /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing frenet_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing kinematic_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing trajectory_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+writing list of installed files to '/home/fabiocar/fabiocar/build/mpc_controller/install.log'

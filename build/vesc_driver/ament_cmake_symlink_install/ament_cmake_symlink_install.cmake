@@ -330,7 +330,7 @@ ament_cmake_symlink_install_files("/home/fabiocar/fabiocar/src/f1tenth_system/ve
 # install("TARGETS" "vesc_driver" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/fabiocar/fabiocar/build/vesc_driver/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "DESTINATION" "lib/vesc_driver")
+# install("TARGETS" "vesc_device_namer" "DESTINATION" "lib/vesc_driver")
 include("/home/fabiocar/fabiocar/build/vesc_driver/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/vesc_driver")

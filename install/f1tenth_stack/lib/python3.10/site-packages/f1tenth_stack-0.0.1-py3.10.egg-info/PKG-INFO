@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: f1tenth_stack
+Version: 0.0.1
+Summary: Onboard drivers for vesc and sensors for F1TENTH vehicles.
+Maintainer: Hongrui Zheng
+Maintainer-email: billyzheng.bz@gmail.com
+License: MIT
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

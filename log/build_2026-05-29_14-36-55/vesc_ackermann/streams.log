@@ -1,0 +1,70 @@
+[0.017s] Invoking command in '/home/fabiocar/fabiocar/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/vesc_ackermann
+[0.037s] -- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.243s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.430s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.435s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.446s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.461s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.479s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.595s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.597s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.726s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.910s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.918s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[0.925s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.927s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.927s] -- Configured cppcheck include dirs: /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann/include
+[0.927s] -- Configured cppcheck exclude dirs and/or files: 
+[0.928s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.928s] -- Configured cpplint exclude dirs and/or files: 
+[0.929s] -- Added test 'lint_cmake' to check CMake code style
+[0.930s] -- Added test 'uncrustify' to check C / C++ code style
+[0.930s] -- Configured uncrustify additional arguments: 
+[0.931s] -- Added test 'xmllint' to check XML markup files
+[0.934s] -- Configuring done
+[0.965s] -- Generating done
+[0.975s] -- Build files have been written to: /home/fabiocar/fabiocar/build/vesc_ackermann
+[0.991s] Invoked command in '/home/fabiocar/fabiocar/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/vesc_ackermann
+[0.994s] Invoking command in '/home/fabiocar/fabiocar/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_ackermann -- -j12 -l12
+[1.052s] [35m[1mConsolidate compiler generated dependencies of target vesc_to_odom_node[0m
+[1.053s] [35m[1mConsolidate compiler generated dependencies of target ackermann_to_vesc_node[0m
+[1.054s] [35m[1mConsolidate compiler generated dependencies of target vesc_ackermann[0m
+[1.081s] [ 28%] Built target vesc_to_odom_node
+[1.083s] [ 57%] Built target ackermann_to_vesc_node
+[1.087s] [ 71%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[1.088s] [ 85%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[19.898s] [100%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[21.408s] [100%] Built target vesc_ackermann
+[21.433s] Invoked command in '/home/fabiocar/fabiocar/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_ackermann -- -j12 -l12
+[21.438s] Invoking command in '/home/fabiocar/fabiocar/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_ackermann
+[21.451s] -- Install configuration: ""
+[21.451s] -- Execute custom install script
+[21.452s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[21.469s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[21.484s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[21.501s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[21.517s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[21.534s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[21.558s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/lib/libvesc_ackermann.so
+[21.574s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[21.590s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[21.606s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[21.623s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[21.647s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[21.664s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[21.678s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[21.693s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[21.710s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[21.725s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[21.739s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[21.753s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[21.770s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[21.785s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[21.801s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[21.817s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.834s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[21.859s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[21.876s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[21.891s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[21.905s] -- Symlinking: /home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[21.929s] Invoked command in '/home/fabiocar/fabiocar/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_ackermann

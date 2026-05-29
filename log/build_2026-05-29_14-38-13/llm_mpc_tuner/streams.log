@@ -1,0 +1,25 @@
+[1.679s] Invoking command in '/home/fabiocar/fabiocar/src/f1tenth_system/llm_mpc_tuner': PYTHONPATH=/home/fabiocar/fabiocar/build/llm_mpc_tuner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/llm_mpc_tuner build --build-base /home/fabiocar/fabiocar/build/llm_mpc_tuner/build install --record /home/fabiocar/fabiocar/build/llm_mpc_tuner/install.log --single-version-externally-managed install_data
+[2.056s] running egg_info
+[2.079s] writing ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/PKG-INFO
+[2.080s] writing dependency_links to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/dependency_links.txt
+[2.080s] writing entry points to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/entry_points.txt
+[2.080s] writing requirements to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/requires.txt
+[2.081s] writing top-level names to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/top_level.txt
+[2.128s] reading manifest file '../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'
+[2.130s] writing manifest file '../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'
+[2.131s] running build
+[2.131s] running build_py
+[2.131s] copying llm_mpc_tuner/__init__.py -> /home/fabiocar/fabiocar/build/llm_mpc_tuner/build/lib/llm_mpc_tuner
+[2.131s] copying llm_mpc_tuner/llm_mpc_tuner_node.py -> /home/fabiocar/fabiocar/build/llm_mpc_tuner/build/lib/llm_mpc_tuner
+[2.132s] running install
+[2.138s] running install_lib
+[2.162s] running install_data
+[2.162s] copying resource/llm_mpc_tuner -> /home/fabiocar/fabiocar/install/llm_mpc_tuner/share/ament_index/resource_index/packages
+[2.162s] copying package.xml -> /home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner
+[2.163s] running install_egg_info
+[2.188s] removing '/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info' (and everything under it)
+[2.188s] Copying ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info to /home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info
+[2.190s] running install_scripts
+[2.384s] Installing llm_mpc_tuner_node script to /home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/llm_mpc_tuner
+[2.384s] writing list of installed files to '/home/fabiocar/fabiocar/build/llm_mpc_tuner/install.log'
+[2.443s] Invoked command in '/home/fabiocar/fabiocar/src/f1tenth_system/llm_mpc_tuner' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/llm_mpc_tuner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/llm_mpc_tuner build --build-base /home/fabiocar/fabiocar/build/llm_mpc_tuner/build install --record /home/fabiocar/fabiocar/build/llm_mpc_tuner/install.log --single-version-externally-managed install_data

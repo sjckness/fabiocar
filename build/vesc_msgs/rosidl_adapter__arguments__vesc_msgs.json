@@ -2,6 +2,8 @@
   "package_name": "vesc_msgs",
   "non_idl_tuples": [
     "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs:msg/VescState.msg",
-    "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs:msg/VescStateStamped.msg"
+    "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs:msg/VescStateStamped.msg",
+    "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs:msg/VescImu.msg",
+    "/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs:msg/VescImuStamped.msg"
   ]
 }

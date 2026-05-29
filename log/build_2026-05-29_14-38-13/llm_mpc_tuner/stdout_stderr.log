@@ -1,0 +1,23 @@
+running egg_info
+writing ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/PKG-INFO
+writing dependency_links to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/dependency_links.txt
+writing entry points to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/entry_points.txt
+writing requirements to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/requires.txt
+writing top-level names to ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/top_level.txt
+reading manifest file '../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'
+writing manifest file '../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info/SOURCES.txt'
+running build
+running build_py
+copying llm_mpc_tuner/__init__.py -> /home/fabiocar/fabiocar/build/llm_mpc_tuner/build/lib/llm_mpc_tuner
+copying llm_mpc_tuner/llm_mpc_tuner_node.py -> /home/fabiocar/fabiocar/build/llm_mpc_tuner/build/lib/llm_mpc_tuner
+running install
+running install_lib
+running install_data
+copying resource/llm_mpc_tuner -> /home/fabiocar/fabiocar/install/llm_mpc_tuner/share/ament_index/resource_index/packages
+copying package.xml -> /home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner
+running install_egg_info
+removing '/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/llm_mpc_tuner/llm_mpc_tuner.egg-info to /home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages/llm_mpc_tuner-0.0.0-py3.10.egg-info
+running install_scripts
+Installing llm_mpc_tuner_node script to /home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/llm_mpc_tuner
+writing list of installed files to '/home/fabiocar/fabiocar/build/llm_mpc_tuner/install.log'
