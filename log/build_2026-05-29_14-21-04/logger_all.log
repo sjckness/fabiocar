@@ -1,0 +1,790 @@
+[0.150s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff82ef5570>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff82ef5060>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff82ef5060>>)
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.209s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fabiocar/fabiocar'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/ackermann_mux) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/ackermann_mux' with type 'ros.ament_cmake' and name 'ackermann_mux'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/f1tenth_stack) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/f1tenth_stack' with type 'ros.ament_python' and name 'f1tenth_stack'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/llm_mpc_tuner) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/llm_mpc_tuner' with type 'ros.ament_python' and name 'llm_mpc_tuner'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/mpc_controller) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/mpc_controller' with type 'ros.ament_python' and name 'mpc_controller'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/scripts) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/joy_teleop) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/teleop_tools/joy_teleop' with type 'ros.ament_python' and name 'joy_teleop'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/key_teleop) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/teleop_tools/key_teleop' with type 'ros.ament_python' and name 'key_teleop'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/mouse_teleop) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/teleop_tools/mouse_teleop' with type 'ros.ament_python' and name 'mouse_teleop'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/teleop_tools/teleop_tools' with type 'ros.ament_cmake' and name 'teleop_tools'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/teleop_tools/teleop_tools_msgs) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/teleop_tools/teleop_tools_msgs' with type 'ros.ament_cmake' and name 'teleop_tools_msgs'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'ros'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['cmake', 'python']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'cmake'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'python'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extensions ['python_setup_py']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/vesc/vesc' with type 'ros.ament_cmake' and name 'vesc'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_ackermann) by extension 'ros'
+[0.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/vesc/vesc_ackermann' with type 'ros.ament_cmake' and name 'vesc_ackermann'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_driver) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/vesc/vesc_driver' with type 'ros.ament_cmake' and name 'vesc_driver'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/f1tenth_system/vesc/vesc_msgs) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/f1tenth_system/vesc/vesc_msgs' with type 'ros.ament_cmake' and name 'vesc_msgs'
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.299s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/fabiocar/roboracer_ws/install
+[0.301s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 302 installed packages in /opt/ros/humble
+[0.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_args' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_target' from command line to 'None'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_clean_first' from command line to 'False'
+[0.359s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'cmake_force_configure' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'ament_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'ackermann_mux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.360s] DEBUG:colcon.colcon_core.verb:Building package 'ackermann_mux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/ackermann_mux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/ackermann_mux', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/ackermann_mux', 'symlink_install': True, 'test_result_base': None}
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_target' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.360s] Level 5:colcon.colcon_core.verb:set package 'key_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.361s] DEBUG:colcon.colcon_core.verb:Building package 'key_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/key_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/key_teleop', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/key_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_target' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_clean_first' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'cmake_force_configure' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'ament_cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'llm_mpc_tuner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.361s] DEBUG:colcon.colcon_core.verb:Building package 'llm_mpc_tuner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/llm_mpc_tuner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/llm_mpc_tuner', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/llm_mpc_tuner', 'symlink_install': True, 'test_result_base': None}
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_target' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'mouse_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.362s] DEBUG:colcon.colcon_core.verb:Building package 'mouse_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/mouse_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/mouse_teleop', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/mouse_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_target' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'mpc_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.363s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/mpc_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/mpc_controller', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/mpc_controller', 'symlink_install': True, 'test_result_base': None}
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_target' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.364s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_tools_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/teleop_tools_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/teleop_tools_msgs', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'vesc_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.364s] DEBUG:colcon.colcon_core.verb:Building package 'vesc_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/vesc_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/vesc_msgs', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'joy_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'joy_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/joy_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/joy_teleop', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/joy_teleop', 'symlink_install': True, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_ackermann' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'vesc_ackermann' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/vesc_ackermann', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/vesc_ackermann', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann', 'symlink_install': True, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'vesc_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'vesc_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/vesc_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/vesc_driver', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver', 'symlink_install': True, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'teleop_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/teleop_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/teleop_tools', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools', 'symlink_install': True, 'test_result_base': None}
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_target' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_clean_cache' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_clean_first' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'cmake_force_configure' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'ament_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'catkin_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'vesc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'vesc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/vesc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/vesc', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc', 'symlink_install': True, 'test_result_base': None}
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_target' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_clean_cache' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_clean_first' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'cmake_force_configure' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'ament_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'catkin_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_stack' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.369s] DEBUG:colcon.colcon_core.verb:Building package 'f1tenth_stack' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fabiocar/fabiocar/build/f1tenth_stack', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fabiocar/fabiocar/install/f1tenth_stack', 'merge_install': False, 'path': '/home/fabiocar/fabiocar/src/f1tenth_system/f1tenth_stack', 'symlink_install': True, 'test_result_base': None}
+[0.369s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.371s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.372s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs' with build type 'ament_cmake'
+[0.372s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs'
+[0.375s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs' with build type 'ament_cmake'
+[0.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs'
+[0.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/ackermann_mux' with build type 'ament_cmake'
+[0.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/ackermann_mux'
+[0.387s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.387s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.392s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/key_teleop' with build type 'ament_python'
+[0.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('key_teleop', 'ament_prefix_path')
+[0.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/ament_prefix_path.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/ament_prefix_path.dsv'
+[0.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/ament_prefix_path.sh'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.400s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/llm_mpc_tuner' with build type 'ament_python'
+[0.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('llm_mpc_tuner', 'ament_prefix_path')
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/ament_prefix_path.ps1'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/ament_prefix_path.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/ament_prefix_path.sh'
+[0.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.403s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.408s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/mouse_teleop' with build type 'ament_python'
+[0.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('mouse_teleop', 'ament_prefix_path')
+[0.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/ament_prefix_path.ps1'
+[0.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/ament_prefix_path.dsv'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/ament_prefix_path.sh'
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.415s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/mpc_controller' with build type 'ament_python'
+[0.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_controller', 'ament_prefix_path')
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/ament_prefix_path.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/ament_prefix_path.dsv'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/ament_prefix_path.sh'
+[0.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_msgs -- -j12 -l12
+[0.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools_msgs
+[0.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/ackermann_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/ackermann_mux
+[0.788s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/key_teleop'
+[0.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.117s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fabiocar/fabiocar/src/f1tenth_system/llm_mpc_tuner'
+[1.117s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.467s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/mouse_teleop'
+[1.467s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.467s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.813s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fabiocar/fabiocar/src/f1tenth_system/mpc_controller'
+[1.813s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.813s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_msgs -- -j12 -l12
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_msgs
+[1.960s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vesc_msgs)
+[1.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_msgs
+[1.965s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs' for CMake module files
+[1.966s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs' for CMake config files
+[1.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_msgs', 'cmake_prefix_path')
+[1.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.ps1'
+[1.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.dsv'
+[1.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.sh'
+[1.971s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib'
+[1.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_msgs', 'ld_library_path_lib')
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.ps1'
+[1.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.dsv'
+[1.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.sh'
+[1.973s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/bin'
+[1.973s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib/pkgconfig/vesc_msgs.pc'
+[1.973s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib/python3.10/site-packages'
+[1.974s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/bin'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.ps1'
+[1.976s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.dsv'
+[1.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.sh'
+[1.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.bash'
+[1.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.zsh'
+[1.981s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/vesc_msgs/share/colcon-core/packages/vesc_msgs)
+[1.982s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vesc_msgs)
+[1.982s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs' for CMake module files
+[1.983s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs' for CMake config files
+[1.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_msgs', 'cmake_prefix_path')
+[1.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.ps1'
+[1.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.dsv'
+[1.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/cmake_prefix_path.sh'
+[1.987s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib'
+[1.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_msgs', 'ld_library_path_lib')
+[1.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.ps1'
+[1.989s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.dsv'
+[1.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/hook/ld_library_path_lib.sh'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/bin'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib/pkgconfig/vesc_msgs.pc'
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/lib/python3.10/site-packages'
+[1.991s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_msgs/bin'
+[1.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.ps1'
+[1.993s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.dsv'
+[1.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.sh'
+[1.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.bash'
+[1.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_msgs/share/vesc_msgs/package.zsh'
+[1.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/vesc_msgs/share/colcon-core/packages/vesc_msgs)
+[1.997s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann' with build type 'ament_cmake'
+[1.997s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann'
+[1.997s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.997s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.004s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver' with build type 'ament_cmake'
+[2.004s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver'
+[2.005s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.005s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/vesc_ackermann
+[2.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_driver': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_driver -- -j12 -l12
+[2.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_driver -- -j12 -l12
+[2.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_driver': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_driver
+[2.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vesc_driver)
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver' for CMake module files
+[2.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_driver' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/vesc_driver
+[2.178s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver' for CMake config files
+[2.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_driver', 'cmake_prefix_path')
+[2.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.ps1'
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.dsv'
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.sh'
+[2.181s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib'
+[2.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_driver', 'ld_library_path_lib')
+[2.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.ps1'
+[2.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.dsv'
+[2.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.sh'
+[2.183s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/bin'
+[2.184s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib/pkgconfig/vesc_driver.pc'
+[2.184s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib/python3.10/site-packages'
+[2.185s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/bin'
+[2.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.ps1'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.dsv'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.sh'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.bash'
+[2.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.zsh'
+[2.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/vesc_driver/share/colcon-core/packages/vesc_driver)
+[2.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vesc_driver)
+[2.190s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver' for CMake module files
+[2.191s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver' for CMake config files
+[2.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_driver', 'cmake_prefix_path')
+[2.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.ps1'
+[2.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.dsv'
+[2.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/cmake_prefix_path.sh'
+[2.194s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib'
+[2.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('vesc_driver', 'ld_library_path_lib')
+[2.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.ps1'
+[2.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.dsv'
+[2.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/hook/ld_library_path_lib.sh'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/bin'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib/pkgconfig/vesc_driver.pc'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/lib/python3.10/site-packages'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_driver/bin'
+[2.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.ps1'
+[2.200s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.dsv'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.sh'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.bash'
+[2.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.zsh'
+[2.204s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/vesc_driver/share/colcon-core/packages/vesc_driver)
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/key_teleop': PYTHONPATH=/home/fabiocar/fabiocar/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/key_teleop/build --no-deps symlink_data
+[2.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/mpc_controller': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/mpc_controller/build --no-deps symlink_data
+[2.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/mouse_teleop': PYTHONPATH=/home/fabiocar/fabiocar/build/mouse_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mouse_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/mouse_teleop/build --no-deps symlink_data
+[2.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/llm_mpc_tuner': PYTHONPATH=/home/fabiocar/fabiocar/build/llm_mpc_tuner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/llm_mpc_tuner/build --no-deps symlink_data
+[2.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/ackermann_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/ackermann_mux
+[2.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/ackermann_mux -- -j12 -l12
+[3.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools_msgs
+[3.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools_msgs -- -j12 -l12
+[3.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('mouse_teleop', 'pythonpath_develop')
+[3.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/mouse_teleop/share/mouse_teleop/hook/pythonpath_develop.ps1'
+[3.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/mouse_teleop' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/mouse_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mouse_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/mouse_teleop/build --no-deps symlink_data
+[3.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/build/mouse_teleop/share/mouse_teleop/hook/pythonpath_develop.dsv'
+[3.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/mouse_teleop/share/mouse_teleop/hook/pythonpath_develop.sh'
+[3.698s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop' for CMake module files
+[3.698s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop' for CMake config files
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop/lib'
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop/bin'
+[3.700s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop/lib/pkgconfig/mouse_teleop.pc'
+[3.700s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop/lib/python3.10/site-packages'
+[3.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('mouse_teleop', 'pythonpath')
+[3.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/pythonpath.ps1'
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/pythonpath.dsv'
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/hook/pythonpath.sh'
+[3.703s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mouse_teleop/bin'
+[3.704s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mouse_teleop)
+[3.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/package.ps1'
+[3.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/package.dsv'
+[3.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/package.sh'
+[3.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/package.bash'
+[3.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mouse_teleop/share/mouse_teleop/package.zsh'
+[3.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/mouse_teleop/share/colcon-core/packages/mouse_teleop)
+[3.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('key_teleop', 'pythonpath_develop')
+[3.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/key_teleop' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/key_teleop/build --no-deps symlink_data
+[3.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/key_teleop/share/key_teleop/hook/pythonpath_develop.ps1'
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/build/key_teleop/share/key_teleop/hook/pythonpath_develop.dsv'
+[3.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/key_teleop/share/key_teleop/hook/pythonpath_develop.sh'
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop' for CMake module files
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop' for CMake config files
+[3.716s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop/lib'
+[3.716s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop/bin'
+[3.716s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop/lib/pkgconfig/key_teleop.pc'
+[3.717s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages'
+[3.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('key_teleop', 'pythonpath')
+[3.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/pythonpath.ps1'
+[3.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/pythonpath.dsv'
+[3.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/hook/pythonpath.sh'
+[3.720s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/key_teleop/bin'
+[3.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(key_teleop)
+[3.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/package.ps1'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/package.dsv'
+[3.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/package.sh'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/package.bash'
+[3.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/package.zsh'
+[3.724s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/key_teleop/share/colcon-core/packages/key_teleop)
+[3.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_controller', 'pythonpath_develop')
+[3.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/mpc_controller' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/mpc_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/mpc_controller/build --no-deps symlink_data
+[3.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/mpc_controller/share/mpc_controller/hook/pythonpath_develop.ps1'
+[3.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/build/mpc_controller/share/mpc_controller/hook/pythonpath_develop.dsv'
+[3.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/mpc_controller/share/mpc_controller/hook/pythonpath_develop.sh'
+[3.730s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller' for CMake module files
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller' for CMake config files
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller/lib'
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller/bin'
+[3.732s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller/lib/pkgconfig/mpc_controller.pc'
+[3.732s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages'
+[3.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_controller', 'pythonpath')
+[3.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/pythonpath.ps1'
+[3.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/pythonpath.dsv'
+[3.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/hook/pythonpath.sh'
+[3.735s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/mpc_controller/bin'
+[3.735s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_controller)
+[3.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/package.ps1'
+[3.737s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/package.dsv'
+[3.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/package.sh'
+[3.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/package.bash'
+[3.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller/package.zsh'
+[3.739s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/mpc_controller/share/colcon-core/packages/mpc_controller)
+[3.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('llm_mpc_tuner', 'pythonpath_develop')
+[3.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath_develop.ps1'
+[3.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/llm_mpc_tuner' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/llm_mpc_tuner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/llm_mpc_tuner/build --no-deps symlink_data
+[3.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/build/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath_develop.dsv'
+[3.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath_develop.sh'
+[3.744s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner' for CMake module files
+[3.745s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner' for CMake config files
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib'
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner/bin'
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/pkgconfig/llm_mpc_tuner.pc'
+[3.746s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner/lib/python3.10/site-packages'
+[3.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('llm_mpc_tuner', 'pythonpath')
+[3.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath.ps1'
+[3.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath.dsv'
+[3.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/hook/pythonpath.sh'
+[3.749s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/llm_mpc_tuner/bin'
+[3.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(llm_mpc_tuner)
+[3.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/package.ps1'
+[3.750s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/package.dsv'
+[3.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/package.sh'
+[3.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/package.bash'
+[3.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/llm_mpc_tuner/package.zsh'
+[3.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/llm_mpc_tuner/share/colcon-core/packages/llm_mpc_tuner)
+[4.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/vesc_ackermann
+[4.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_ackermann -- -j12 -l12
+[7.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools_msgs -- -j12 -l12
+[7.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools_msgs
+[8.618s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_tools_msgs)
+[8.619s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs' for CMake module files
+[8.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools_msgs
+[8.622s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs' for CMake config files
+[8.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools_msgs', 'cmake_prefix_path')
+[8.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.ps1'
+[8.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.dsv'
+[8.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.sh'
+[8.631s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib'
+[8.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools_msgs', 'ld_library_path_lib')
+[8.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.ps1'
+[8.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.dsv'
+[8.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.sh'
+[8.636s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/bin'
+[8.636s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/pkgconfig/teleop_tools_msgs.pc'
+[8.637s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/python3.10/site-packages'
+[8.639s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/bin'
+[8.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.ps1'
+[8.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.dsv'
+[8.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.sh'
+[8.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.bash'
+[8.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.zsh'
+[8.647s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/colcon-core/packages/teleop_tools_msgs)
+[8.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_tools_msgs)
+[8.650s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs' for CMake module files
+[8.653s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs' for CMake config files
+[8.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools_msgs', 'cmake_prefix_path')
+[8.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.ps1'
+[8.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.dsv'
+[8.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/cmake_prefix_path.sh'
+[8.662s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib'
+[8.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools_msgs', 'ld_library_path_lib')
+[8.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.ps1'
+[8.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.dsv'
+[8.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/hook/ld_library_path_lib.sh'
+[8.667s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/bin'
+[8.667s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/pkgconfig/teleop_tools_msgs.pc'
+[8.668s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/python3.10/site-packages'
+[8.669s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools_msgs/bin'
+[8.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.ps1'
+[8.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.dsv'
+[8.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.sh'
+[8.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.bash'
+[8.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.zsh'
+[8.677s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/teleop_tools_msgs/share/colcon-core/packages/teleop_tools_msgs)
+[8.678s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/joy_teleop' with build type 'ament_python'
+[8.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_teleop', 'ament_prefix_path')
+[8.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/ament_prefix_path.ps1'
+[8.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/ament_prefix_path.dsv'
+[8.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/ament_prefix_path.sh'
+[8.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.041s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/joy_teleop'
+[9.042s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.042s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/joy_teleop': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/joy_teleop/build --no-deps symlink_data
+[10.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_teleop', 'pythonpath_develop')
+[10.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/joy_teleop/share/joy_teleop/hook/pythonpath_develop.ps1'
+[10.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/joy_teleop/build --no-deps symlink_data
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/build/joy_teleop/share/joy_teleop/hook/pythonpath_develop.dsv'
+[10.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/build/joy_teleop/share/joy_teleop/hook/pythonpath_develop.sh'
+[10.827s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop' for CMake module files
+[10.828s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop' for CMake config files
+[10.830s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop/lib'
+[10.830s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop/bin'
+[10.830s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop/lib/pkgconfig/joy_teleop.pc'
+[10.831s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages'
+[10.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_teleop', 'pythonpath')
+[10.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/pythonpath.ps1'
+[10.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/pythonpath.dsv'
+[10.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/hook/pythonpath.sh'
+[10.837s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/joy_teleop/bin'
+[10.838s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_teleop)
+[10.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/package.ps1'
+[10.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/package.dsv'
+[10.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/package.sh'
+[10.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/package.bash'
+[10.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/package.zsh'
+[10.847s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/joy_teleop/share/colcon-core/packages/joy_teleop)
+[10.848s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools' with build type 'ament_cmake'
+[10.849s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools'
+[10.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.850s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools
+[11.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools
+[11.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools -- -j12 -l12
+[11.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools -- -j12 -l12
+[11.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools
+[12.222s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_tools)
+[12.223s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools' for CMake module files
+[12.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/joy_teleop:/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/fabiocar/install/key_teleop:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/fabiocar/build/key_teleop:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools
+[12.226s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools' for CMake config files
+[12.227s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools', 'cmake_prefix_path')
+[12.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.ps1'
+[12.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.dsv'
+[12.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.sh'
+[12.233s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/bin'
+[12.233s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/lib/pkgconfig/teleop_tools.pc'
+[12.234s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/lib/python3.10/site-packages'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/bin'
+[12.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.ps1'
+[12.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.dsv'
+[12.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.sh'
+[12.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.bash'
+[12.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.zsh'
+[12.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/teleop_tools/share/colcon-core/packages/teleop_tools)
+[12.246s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_tools)
+[12.246s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools' for CMake module files
+[12.248s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools' for CMake config files
+[12.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_tools', 'cmake_prefix_path')
+[12.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.ps1'
+[12.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.dsv'
+[12.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/hook/cmake_prefix_path.sh'
+[12.255s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/bin'
+[12.255s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/lib/pkgconfig/teleop_tools.pc'
+[12.256s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/lib/python3.10/site-packages'
+[12.257s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/teleop_tools/bin'
+[12.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.ps1'
+[12.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.dsv'
+[12.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.sh'
+[12.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.bash'
+[12.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/teleop_tools/share/teleop_tools/package.zsh'
+[12.266s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/teleop_tools/share/colcon-core/packages/teleop_tools)
+[13.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fabiocar/fabiocar/build/vesc_ackermann' returned '2': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/fabiocar/fabiocar/build/vesc_ackermann -- -j12 -l12
+[13.678s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vesc_ackermann)
+[13.678s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann' for CMake module files
+[13.679s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann' for CMake config files
+[13.680s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann/bin'
+[13.680s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann/lib/pkgconfig/vesc_ackermann.pc'
+[13.681s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann/lib/python3.10/site-packages'
+[13.682s] Level 1:colcon.colcon_core.environment:checking '/home/fabiocar/fabiocar/install/vesc_ackermann/bin'
+[13.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.ps1'
+[13.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.dsv'
+[13.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.sh'
+[13.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.bash'
+[13.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/fabiocar/fabiocar/install/vesc_ackermann/share/vesc_ackermann/package.zsh'
+[13.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fabiocar/fabiocar/install/vesc_ackermann/share/colcon-core/packages/vesc_ackermann)
+[23.164s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.165s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.165s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[23.166s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.169s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.170s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fabiocar/fabiocar/install/local_setup.ps1'
+[23.173s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fabiocar/fabiocar/install/_local_setup_util_ps1.py'
+[23.179s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fabiocar/fabiocar/install/setup.ps1'
+[23.184s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fabiocar/fabiocar/install/local_setup.sh'
+[23.186s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fabiocar/fabiocar/install/_local_setup_util_sh.py'
+[23.188s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fabiocar/fabiocar/install/setup.sh'
+[23.193s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fabiocar/fabiocar/install/local_setup.bash'
+[23.195s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fabiocar/fabiocar/install/setup.bash'
+[23.200s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fabiocar/fabiocar/install/local_setup.zsh'
+[23.202s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fabiocar/fabiocar/install/setup.zsh'

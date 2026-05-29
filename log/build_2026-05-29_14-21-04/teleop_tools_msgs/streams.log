@@ -1,0 +1,202 @@
+[0.053s] Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools_msgs
+[1.110s] -- The C compiler identification is GNU 11.4.0
+[1.110s] -- The CXX compiler identification is GNU 11.4.0
+[1.110s] -- Detecting C compiler ABI info
+[1.110s] -- Detecting C compiler ABI info - done
+[1.110s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.111s] -- Detecting C compile features
+[1.111s] -- Detecting C compile features - done
+[1.111s] -- Detecting CXX compiler ABI info
+[1.111s] -- Detecting CXX compiler ABI info - done
+[1.111s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.111s] -- Detecting CXX compile features
+[1.111s] -- Detecting CXX compile features - done
+[1.111s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.112s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.211s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.299s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.310s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.328s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.443s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.948s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.673s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.711s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.716s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.759s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.759s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.760s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.760s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[2.796s] -- Found PythonExtra: .so  
+[2.886s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.889s] -- Added test 'lint_cmake' to check CMake code style
+[2.892s] -- Added test 'xmllint' to check XML markup files
+[2.909s] -- Configuring done
+[2.999s] -- Generating done
+[3.020s] -- Build files have been written to: /home/fabiocar/fabiocar/build/teleop_tools_msgs
+[3.047s] Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake /home/fabiocar/fabiocar/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/teleop_tools_msgs
+[3.047s] Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools_msgs -- -j12 -l12
+[3.104s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.117s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.129s] [  6%] Built target ament_cmake_python_symlink_teleop_tools_msgs
+[3.485s] running egg_info
+[3.510s] creating teleop_tools_msgs.egg-info
+[3.510s] writing teleop_tools_msgs.egg-info/PKG-INFO
+[3.511s] writing dependency_links to teleop_tools_msgs.egg-info/dependency_links.txt
+[3.511s] writing top-level names to teleop_tools_msgs.egg-info/top_level.txt
+[3.512s] writing manifest file 'teleop_tools_msgs.egg-info/SOURCES.txt'
+[3.586s] reading manifest file 'teleop_tools_msgs.egg-info/SOURCES.txt'
+[3.587s] writing manifest file 'teleop_tools_msgs.egg-info/SOURCES.txt'
+[3.647s] [  6%] Built target ament_cmake_python_build_teleop_tools_msgs_egg
+[3.761s] [  6%] Built target teleop_tools_msgs__cpp
+[3.775s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.775s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.775s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.791s] [ 19%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_generator_c.dir/rosidl_generator_c/teleop_tools_msgs/action/detail/increment__functions.c.o[0m
+[3.996s] [ 22%] [32m[1mLinking C shared library libteleop_tools_msgs__rosidl_generator_c.so[0m
+[4.046s] [ 22%] Built target teleop_tools_msgs__rosidl_generator_c
+[4.061s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.061s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.061s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.258s] [ 35%] [32mBuilding CXX object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/teleop_tools_msgs/action/increment__type_support.cpp.o[0m
+[4.336s] [ 38%] [32mBuilding CXX object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/teleop_tools_msgs/action/detail/increment__type_support.cpp.o[0m
+[4.363s] [ 41%] [32mBuilding CXX object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/teleop_tools_msgs/action/detail/dds_fastrtps/increment__type_support.cpp.o[0m
+[4.494s] [ 45%] [32mBuilding CXX object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/teleop_tools_msgs/action/increment__type_support.cpp.o[0m
+[4.661s] [ 48%] [32m[1mLinking CXX shared library libteleop_tools_msgs__rosidl_typesupport_c.so[0m
+[4.742s] [ 51%] [32mBuilding CXX object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/teleop_tools_msgs/action/detail/increment__type_support_c.cpp.o[0m
+[4.748s] [ 51%] Built target teleop_tools_msgs__rosidl_typesupport_c
+[4.760s] [ 54%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/teleop_tools_msgs/action/detail/increment__type_support.c.o[0m
+[4.847s] [ 58%] [32m[1mLinking C shared library libteleop_tools_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.896s] [ 58%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c
+[5.019s] [ 61%] [32m[1mLinking CXX shared library libteleop_tools_msgs__rosidl_typesupport_cpp.so[0m
+[5.077s] [ 61%] Built target teleop_tools_msgs__rosidl_typesupport_cpp
+[5.347s] [ 64%] [32m[1mLinking CXX shared library libteleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.365s] [ 67%] [32m[1mLinking CXX shared library libteleop_tools_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.456s] [ 70%] [32m[1mLinking CXX shared library libteleop_tools_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.467s] [ 70%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_cpp
+[5.488s] [ 70%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c
+[5.565s] [ 70%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_cpp
+[5.592s] [ 70%] Built target teleop_tools_msgs
+[5.619s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.640s] [ 74%] Built target teleop_tools_msgs__py
+[6.668s] [ 77%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_generator_py.dir/rosidl_generator_py/teleop_tools_msgs/action/_increment_s.c.o[0m
+[6.887s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/teleop_tools_msgs/libteleop_tools_msgs__rosidl_generator_py.so[0m
+[6.943s] [ 80%] Built target teleop_tools_msgs__rosidl_generator_py
+[6.972s] [ 90%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.972s] [ 90%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[6.972s] [ 90%] [32mBuilding C object CMakeFiles/teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.154s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[7.154s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[7.161s] [100%] [32m[1mLinking C shared library rosidl_generator_py/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[7.214s] [100%] Built target teleop_tools_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.218s] [100%] Built target teleop_tools_msgs__rosidl_typesupport_c__pyext
+[7.218s] [100%] Built target teleop_tools_msgs__rosidl_typesupport_introspection_c__pyext
+[7.235s] Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --build /home/fabiocar/fabiocar/build/teleop_tools_msgs -- -j12 -l12
+[7.238s] Invoking command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools_msgs
+[7.249s] -- Install configuration: ""
+[7.249s] -- Execute custom install script
+[7.250s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/ament_index/resource_index/rosidl_interfaces/teleop_tools_msgs
+[7.263s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__functions.h
+[7.275s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__struct.h
+[7.287s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__type_support.h
+[7.299s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/increment.h
+[7.311s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.323s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.sh
+[7.335s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/library_path.dsv
+[7.348s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_c.h
+[7.360s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.373s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_c.h
+[7.385s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.399s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__builder.hpp
+[7.410s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__struct.hpp
+[7.422s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__traits.hpp
+[7.434s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__type_support.hpp
+[7.446s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/increment.hpp
+[7.459s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.474s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_fastrtps_cpp.hpp
+[7.490s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.505s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/include/teleop_tools_msgs/teleop_tools_msgs/action/detail/increment__rosidl_typesupport_introspection_cpp.hpp
+[7.520s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.sh
+[7.535s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/pythonpath.dsv
+[7.551s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info/PKG-INFO
+[7.566s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info/SOURCES.txt
+[7.580s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info/dependency_links.txt
+[7.595s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs-1.2.1-py3.10.egg-info/top_level.txt
+[7.610s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/__init__.py
+[7.624s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_c.c
+[7.640s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.655s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/_teleop_tools_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[7.671s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action/__init__.py
+[7.686s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action/_increment.py
+[7.700s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action/_increment_s.c
+[7.714s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/libteleop_tools_msgs__rosidl_generator_py.so
+[7.729s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[7.743s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[7.757s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[7.773s] -- Up-to-date symlink: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[7.774s] -- Up-to-date symlink: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[7.774s] -- Up-to-date symlink: /home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/teleop_tools_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[7.775s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.idl
+[7.790s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/action/Increment.action
+[7.805s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/ament_index/resource_index/package_run_dependencies/teleop_tools_msgs
+[7.822s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/ament_index/resource_index/parent_prefix_path/teleop_tools_msgs
+[7.837s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.sh
+[7.854s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/ament_prefix_path.dsv
+[7.868s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.sh
+[7.883s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/environment/path.dsv
+[7.897s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.bash
+[7.914s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.sh
+[7.928s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.zsh
+[7.943s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/local_setup.dsv
+[7.957s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.dsv
+[7.972s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/ament_index/resource_index/packages/teleop_tools_msgs
+[7.987s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake-extras.cmake
+[8.001s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.016s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.030s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.044s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.059s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.073s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.087s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig.cmake
+[8.102s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgsConfig-version.cmake
+[8.116s] -- Symlinking: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/package.xml
+[8.130s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_c.so
+[8.132s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_c.so" to ""
+[8.132s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_c.so
+[8.133s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[8.134s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_c.so
+[8.135s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_c.so" to ""
+[8.135s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_c.so
+[8.136s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_c.so" to ""
+[8.137s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.138s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.138s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_cpp.so
+[8.140s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[8.140s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_cpp.so
+[8.141s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_typesupport_cpp.so" to ""
+[8.214s] Listing '/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs'...
+[8.214s] Compiling '/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/__init__.py'...
+[8.214s] Listing '/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action'...
+[8.214s] Compiling '/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action/__init__.py'...
+[8.215s] Compiling '/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages/teleop_tools_msgs/action/_increment.py'...
+[8.223s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_py.so
+[8.224s] -- Set runtime path of "/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib/libteleop_tools_msgs__rosidl_generator_py.so" to ""
+[8.224s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_generator_cExport.cmake
+[8.224s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.225s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.225s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.225s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.226s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.226s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport.cmake
+[8.227s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.227s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_generator_cppExport.cmake
+[8.228s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.228s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.229s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.229s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.230s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport.cmake
+[8.230s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/teleop_tools_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.231s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_generator_pyExport.cmake
+[8.231s] -- Installing: /home/fabiocar/fabiocar/install/teleop_tools_msgs/share/teleop_tools_msgs/cmake/export_teleop_tools_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.239s] Invoked command in '/home/fabiocar/fabiocar/build/teleop_tools_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble /usr/bin/cmake --install /home/fabiocar/fabiocar/build/teleop_tools_msgs

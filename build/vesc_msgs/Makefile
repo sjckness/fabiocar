@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs
+CMAKE_SOURCE_DIR = /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabiocar/roboracer_ws/build/vesc_msgs
+CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles /home/fabiocar/roboracer_ws/build/vesc_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles /home/fabiocar/fabiocar/build/vesc_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ vesc_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : vesc_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_vesc_msgs
+# Target rules for targets named ament_cmake_python_symlink_vesc_msgs
 
 # Build rule for target.
-ament_cmake_python_copy_vesc_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_vesc_msgs
-.PHONY : ament_cmake_python_copy_vesc_msgs
+ament_cmake_python_symlink_vesc_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_vesc_msgs
+.PHONY : ament_cmake_python_symlink_vesc_msgs
 
 # fast build rule for target.
-ament_cmake_python_copy_vesc_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_vesc_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_vesc_msgs.dir/build
-.PHONY : ament_cmake_python_copy_vesc_msgs/fast
+ament_cmake_python_symlink_vesc_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_vesc_msgs.dir/build.make CMakeFiles/ament_cmake_python_symlink_vesc_msgs.dir/build
+.PHONY : ament_cmake_python_symlink_vesc_msgs/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_vesc_msgs_egg
@@ -404,54 +404,6 @@ vesc_msgs__py: cmake_check_build_system
 vesc_msgs__py/fast:
 	$(MAKE) $(MAKESILENT) -f vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/build.make vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/build
 .PHONY : vesc_msgs__py/fast
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.o
-
-# target to build an object file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.i: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.s: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.o
-
-# target to build an object file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.i: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.i
-
-# target to preprocess a source file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.s: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.s
-
-# target to generate assembly for a file
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s
-.PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s
 
 rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o
 .PHONY : rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.o
@@ -573,54 +525,6 @@ rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.o: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.o
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.o
-
-# target to build an object file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.o
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.o
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.i: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.i
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.i
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.i
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.s: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.s
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.s
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c.s
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.o: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.o
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.o
-
-# target to build an object file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.o
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.o
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.i: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.i
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.i
-
-# target to preprocess a source file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.i
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.i
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.s: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.s
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.s
-
-# target to generate assembly for a file
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.s
-.PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c.s
-
 rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.o: rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c.o
 .PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.o
 
@@ -668,54 +572,6 @@ rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.s: rosidl_generator_py/v
 rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_generator_py.dir/build.make CMakeFiles/vesc_msgs__rosidl_generator_py.dir/rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c.s
 .PHONY : rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c.s
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.o: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.i: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.s: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.o: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.o
-
-# target to build an object file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.i: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.s: rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
 
 rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.o: rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.o
@@ -765,54 +621,6 @@ rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s
 
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.o: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.o
-
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.i: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.i
-
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.s: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.cpp.s
-
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.o: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.o
-
-# target to build an object file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.o
-
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.i: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.i
-
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.s: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.cpp.s
-
 rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.o: rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.o
 
@@ -860,54 +668,6 @@ rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.s: rosidl_
 rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.o: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.i: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.s: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.cpp.s
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.o: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.o
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.i: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.i
-
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.s: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.o: rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.o
@@ -957,54 +717,6 @@ rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_supp
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.o: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.i: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.s: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.cpp.s
-
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.o: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.o
-
-# target to build an object file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.o
-
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.i: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.i
-
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.s: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.cpp.s
-
 rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.o: rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.o
 
@@ -1053,54 +765,6 @@ rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_sta
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.cpp.s
 
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.o: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.o
-
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.i: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.i
-
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.s: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.c.s
-
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.o
-
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.i
-
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.c.s
-
 rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.o: rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.o
 
@@ -1148,54 +812,6 @@ rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type
 rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.c.s
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.o: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.i: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.s: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.cpp.s
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o
-
-# target to build an object file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.o
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i
-
-# target to preprocess a source file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.i
-
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s
-
-# target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vesc_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.o: rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.o
@@ -1259,7 +875,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_vesc_msgs_egg"
-	@echo "... ament_cmake_python_copy_vesc_msgs"
+	@echo "... ament_cmake_python_symlink_vesc_msgs"
 	@echo "... uninstall"
 	@echo "... vesc_msgs"
 	@echo "... vesc_msgs__cpp"
@@ -1276,12 +892,6 @@ help:
 	@echo "... vesc_msgs__rosidl_typesupport_introspection_c"
 	@echo "... vesc_msgs__rosidl_typesupport_introspection_c__pyext"
 	@echo "... vesc_msgs__rosidl_typesupport_introspection_cpp"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.o"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.i"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.s"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.o"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.i"
-	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.s"
 	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.o"
 	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.i"
 	@echo "... rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.s"
@@ -1297,84 +907,42 @@ help:
 	@echo "... rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.s"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.o"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.i"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.s"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.o"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.i"
-	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.s"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.o"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.i"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.s"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.o"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.i"
 	@echo "... rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.s"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.o"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.i"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu__type_support.s"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.o"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.i"
-	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_imu_stamped__type_support.s"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.o"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.i"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state__type_support.s"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.o"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.i"
 	@echo "... rosidl_typesupport_c/vesc_msgs/msg/vesc_state_stamped__type_support.s"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.o"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.i"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu__type_support.s"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.o"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.i"
-	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_imu_stamped__type_support.s"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.o"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.i"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state__type_support.s"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.o"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.i"
 	@echo "... rosidl_typesupport_cpp/vesc_msgs/msg/vesc_state_stamped__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_imu_stamped__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/vesc_msgs/msg/detail/dds_fastrtps/vesc_state_stamped__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/vesc_msgs/msg/detail/vesc_state__type_support.s"

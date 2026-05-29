@@ -1,4 +1,1 @@
-# Timestamped VESC open source motor controller state (telemetry)
-
-std_msgs/Header  header
-VescState state
+/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs/msg/VescStateStamped.msg

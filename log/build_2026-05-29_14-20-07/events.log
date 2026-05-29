@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.000714] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001155] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.001241] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.001329] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.001395] (-) JobUnselected: {'identifier': 'llm_mpc_tuner'}
+[0.001494] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.001560] (-) JobUnselected: {'identifier': 'mpc_controller'}
+[0.001624] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.001702] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.001780] (-) JobUnselected: {'identifier': 'vesc'}
+[0.001912] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.001954] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.002000] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/fabiocar/fabiocar/install/vesc_msgs')])}
+[0.002077] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[0.017609] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[0.018375] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/fabiocar/fabiocar/install/vesc_driver'], 'cwd': '/home/fabiocar/fabiocar/build/vesc_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('SSH_CLIENT', '172.26.13.35 45416 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar/fabiocar/src'), ('TERM_PROGRAM_VERSION', '1.115.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1004/vscode-ipc-208f442a-54e7-43ad-be03-768102095a65.sock'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1004/vscode-git-d7030d17c5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/fabiocar/build/vesc_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.26.13.35 45416 172.26.12.40 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[0.099442] (-) TimerEvent: {}
+[0.107364] (vesc_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199788] (-) TimerEvent: {}
+[0.202493] (vesc_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.223792] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299973] (-) TimerEvent: {}
+[0.364077] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.388477] (vesc_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.389210] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.390520] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.400041] (-) TimerEvent: {}
+[0.401214] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500204] (-) TimerEvent: {}
+[0.543471] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.558552] (vesc_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.559246] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.560316] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.567121] (vesc_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.600338] (-) TimerEvent: {}
+[0.700823] (-) TimerEvent: {}
+[0.801343] (-) TimerEvent: {}
+[0.901958] (-) TimerEvent: {}
+[1.002544] (-) TimerEvent: {}
+[1.102916] (-) TimerEvent: {}
+[1.175140] (vesc_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.203030] (-) TimerEvent: {}
+[1.288262] (vesc_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.303147] (-) TimerEvent: {}
+[1.403710] (-) TimerEvent: {}
+[1.504316] (-) TimerEvent: {}
+[1.589416] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.596778] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.604428] (-) TimerEvent: {}
+[1.609073] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.625932] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.648723] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.704514] (-) TimerEvent: {}
+[1.711046] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.715046] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.804688] (-) TimerEvent: {}
+[1.861799] (vesc_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.904843] (-) TimerEvent: {}
+[1.909132] (vesc_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.972750] (vesc_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.986614] (vesc_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.004943] (-) TimerEvent: {}
+[2.105399] (-) TimerEvent: {}
+[2.128233] (vesc_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.128896] (vesc_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.205554] (-) TimerEvent: {}
+[2.260206] (vesc_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.262919] (vesc_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.305638] (-) TimerEvent: {}
+[2.406113] (-) TimerEvent: {}
+[2.454909] (vesc_driver) StdoutLine: {'line': b'-- Found asio_cmake_module: 1.2.0 (/opt/ros/humble/share/asio_cmake_module/cmake)\n'}
+[2.456384] (vesc_driver) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[2.504731] (vesc_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.506207] (-) TimerEvent: {}
+[2.532299] (vesc_driver) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[2.539886] (vesc_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.541985] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.542436] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver/include\n'}
+[2.542743] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.544051] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.544526] (vesc_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.544941] (vesc_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.545862] (vesc_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.546472] (vesc_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.548219] (vesc_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.548557] (vesc_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.549183] (vesc_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.553999] (vesc_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.582713] (vesc_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[2.590049] (vesc_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/fabiocar/fabiocar/build/vesc_driver\n'}
+[2.606305] (-) TimerEvent: {}
+[2.608181] (vesc_driver) CommandEnded: {'returncode': 0}
+[2.609002] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[2.610308] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fabiocar/fabiocar/build/vesc_driver', '--', '-j12', '-l12'], 'cwd': '/home/fabiocar/fabiocar/build/vesc_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('SSH_CLIENT', '172.26.13.35 45416 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar/fabiocar/src'), ('TERM_PROGRAM_VERSION', '1.115.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1004/vscode-ipc-208f442a-54e7-43ad-be03-768102095a65.sock'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1004/vscode-git-d7030d17c5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/fabiocar/build/vesc_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.26.13.35 45416 172.26.12.40 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[2.694245] (vesc_driver) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o\x1b[0m\n'}
+[2.694639] (vesc_driver) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o\x1b[0m\n'}
+[2.694791] (vesc_driver) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o\x1b[0m\n'}
+[2.694922] (vesc_driver) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o\x1b[0m\n'}
+[2.695276] (vesc_driver) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o\x1b[0m\n'}
+[2.706429] (-) TimerEvent: {}
+[2.806940] (-) TimerEvent: {}
+[2.907637] (-) TimerEvent: {}
+[3.008349] (-) TimerEvent: {}
+[3.109042] (-) TimerEvent: {}
+[3.209740] (-) TimerEvent: {}
+[3.310274] (-) TimerEvent: {}
+[3.410825] (-) TimerEvent: {}
+[3.511360] (-) TimerEvent: {}
+[3.611911] (-) TimerEvent: {}
+[3.712565] (-) TimerEvent: {}
+[3.813092] (-) TimerEvent: {}
+[3.913600] (-) TimerEvent: {}
+[4.014126] (-) TimerEvent: {}
+[4.114656] (-) TimerEvent: {}
+[4.215184] (-) TimerEvent: {}
+[4.315884] (-) TimerEvent: {}
+[4.416542] (-) TimerEvent: {}
+[4.517070] (-) TimerEvent: {}
+[4.617615] (-) TimerEvent: {}
+[4.718154] (-) TimerEvent: {}
+[4.818689] (-) TimerEvent: {}
+[4.919216] (-) TimerEvent: {}
+[5.019772] (-) TimerEvent: {}
+[5.120345] (-) TimerEvent: {}
+[5.220876] (-) TimerEvent: {}
+[5.321426] (-) TimerEvent: {}
+[5.421964] (-) TimerEvent: {}
+[5.522480] (-) TimerEvent: {}
+[5.623014] (-) TimerEvent: {}
+[5.723562] (-) TimerEvent: {}
+[5.824092] (-) TimerEvent: {}
+[5.924650] (-) TimerEvent: {}
+[6.025201] (-) TimerEvent: {}
+[6.125904] (-) TimerEvent: {}
+[6.226452] (-) TimerEvent: {}
+[6.327135] (-) TimerEvent: {}
+[6.427680] (-) TimerEvent: {}
+[6.528220] (-) TimerEvent: {}
+[6.628761] (-) TimerEvent: {}
+[6.729281] (-) TimerEvent: {}
+[6.829800] (-) TimerEvent: {}
+[6.930339] (-) TimerEvent: {}
+[7.030865] (-) TimerEvent: {}
+[7.131552] (-) TimerEvent: {}
+[7.232073] (-) TimerEvent: {}
+[7.332604] (-) TimerEvent: {}
+[7.433115] (-) TimerEvent: {}
+[7.533618] (-) TimerEvent: {}
+[7.595228] (vesc_driver) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable vesc_driver_node\x1b[0m\n'}
+[7.633748] (-) TimerEvent: {}
+[7.734217] (-) TimerEvent: {}
+[7.787141] (vesc_driver) StdoutLine: {'line': b'[ 85%] Built target vesc_driver_node\n'}
+[7.834348] (-) TimerEvent: {}
+[7.935024] (-) TimerEvent: {}
+[8.035705] (-) TimerEvent: {}
+[8.136392] (-) TimerEvent: {}
+[8.236899] (-) TimerEvent: {}
+[8.337404] (-) TimerEvent: {}
+[8.437906] (-) TimerEvent: {}
+[8.538403] (-) TimerEvent: {}
+[8.638902] (-) TimerEvent: {}
+[8.739403] (-) TimerEvent: {}
+[8.839919] (-) TimerEvent: {}
+[8.940434] (-) TimerEvent: {}
+[9.040946] (-) TimerEvent: {}
+[9.141467] (-) TimerEvent: {}
+[9.242004] (-) TimerEvent: {}
+[9.342528] (-) TimerEvent: {}
+[9.443039] (-) TimerEvent: {}
+[9.543553] (-) TimerEvent: {}
+[9.644060] (-) TimerEvent: {}
+[9.744592] (-) TimerEvent: {}
+[9.845119] (-) TimerEvent: {}
+[9.945634] (-) TimerEvent: {}
+[10.046142] (-) TimerEvent: {}
+[10.146660] (-) TimerEvent: {}
+[10.247170] (-) TimerEvent: {}
+[10.347679] (-) TimerEvent: {}
+[10.448181] (-) TimerEvent: {}
+[10.548695] (-) TimerEvent: {}
+[10.649193] (-) TimerEvent: {}
+[10.749699] (-) TimerEvent: {}
+[10.850212] (-) TimerEvent: {}
+[10.950730] (-) TimerEvent: {}
+[11.051239] (-) TimerEvent: {}
+[11.151764] (-) TimerEvent: {}
+[11.252344] (-) TimerEvent: {}
+[11.352883] (-) TimerEvent: {}
+[11.453400] (-) TimerEvent: {}
+[11.553914] (-) TimerEvent: {}
+[11.654421] (-) TimerEvent: {}
+[11.754927] (-) TimerEvent: {}
+[11.855457] (-) TimerEvent: {}
+[11.955956] (-) TimerEvent: {}
+[12.056458] (-) TimerEvent: {}
+[12.156938] (-) TimerEvent: {}
+[12.257444] (-) TimerEvent: {}
+[12.357938] (-) TimerEvent: {}
+[12.458429] (-) TimerEvent: {}
+[12.558926] (-) TimerEvent: {}
+[12.659417] (-) TimerEvent: {}
+[12.759901] (-) TimerEvent: {}
+[12.860396] (-) TimerEvent: {}
+[12.960888] (-) TimerEvent: {}
+[13.061374] (-) TimerEvent: {}
+[13.161862] (-) TimerEvent: {}
+[13.262342] (-) TimerEvent: {}
+[13.362835] (-) TimerEvent: {}
+[13.463317] (-) TimerEvent: {}
+[13.563799] (-) TimerEvent: {}
+[13.664302] (-) TimerEvent: {}
+[13.764802] (-) TimerEvent: {}
+[13.865294] (-) TimerEvent: {}
+[13.965794] (-) TimerEvent: {}
+[14.066290] (-) TimerEvent: {}
+[14.166786] (-) TimerEvent: {}
+[14.267283] (-) TimerEvent: {}
+[14.367776] (-) TimerEvent: {}
+[14.468277] (-) TimerEvent: {}
+[14.568761] (-) TimerEvent: {}
+[14.669248] (-) TimerEvent: {}
+[14.769742] (-) TimerEvent: {}
+[14.870245] (-) TimerEvent: {}
+[14.970741] (-) TimerEvent: {}
+[15.071241] (-) TimerEvent: {}
+[15.171724] (-) TimerEvent: {}
+[15.272209] (-) TimerEvent: {}
+[15.372747] (-) TimerEvent: {}
+[15.473418] (-) TimerEvent: {}
+[15.574065] (-) TimerEvent: {}
+[15.674700] (-) TimerEvent: {}
+[15.775318] (-) TimerEvent: {}
+[15.875967] (-) TimerEvent: {}
+[15.976644] (-) TimerEvent: {}
+[16.077292] (-) TimerEvent: {}
+[16.177956] (-) TimerEvent: {}
+[16.278618] (-) TimerEvent: {}
+[16.379282] (-) TimerEvent: {}
+[16.479946] (-) TimerEvent: {}
+[16.507705] (vesc_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_driver.so\x1b[0m\n'}
+[16.580129] (-) TimerEvent: {}
+[16.680827] (-) TimerEvent: {}
+[16.781501] (-) TimerEvent: {}
+[16.882222] (-) TimerEvent: {}
+[16.982911] (-) TimerEvent: {}
+[17.083599] (-) TimerEvent: {}
+[17.184273] (-) TimerEvent: {}
+[17.284947] (-) TimerEvent: {}
+[17.328306] (vesc_driver) StdoutLine: {'line': b'[100%] Built target vesc_driver\n'}
+[17.350272] (vesc_driver) CommandEnded: {'returncode': 0}
+[17.352486] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'install'}
+[17.367694] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fabiocar/fabiocar/build/vesc_driver'], 'cwd': '/home/fabiocar/fabiocar/build/vesc_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'fabiocar'), ('SSH_CLIENT', '172.26.13.35 45416 22'), ('LC_TIME', 'de_CH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs/lib:/home/fabiocar/roboracer_ws/install/vesc_driver/lib:/home/fabiocar/roboracer_ws/install/vesc_ackermann/lib:/home/fabiocar/roboracer_ws/install/vesc_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fabiocar'), ('OLDPWD', '/home/fabiocar/fabiocar/src'), ('TERM_PROGRAM_VERSION', '1.115.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1004/vscode-ipc-208f442a-54e7-43ad-be03-768102095a65.sock'), ('JETSON_L4T', '36.4.7'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1004/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/fabiocar/roboracer_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fabiocar'), ('JETSON_MODULE', 'NVIDIA Jetson AGX Orin (64GB ram)'), ('JETSON_SERIAL_NUMBER', '1422625029748'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/fabiocar/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/fabiocar/.vscode-server/cli/servers/Stable-41dd792b5e652393e7787322889ed5fdc58bd75b/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_CH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1004'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_CH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1004/vscode-git-d7030d17c5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_CH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_CH.UTF-8'), ('LC_IDENTIFICATION', 'de_CH.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/fabiocar/fabiocar/build/vesc_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.26.13.35 45416 172.26.12.40 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fabiocar/fabiocar/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/f1tenth_stack/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/vesc_msgs/local/lib/python3.10/dist-packages:/home/fabiocar/roboracer_ws/install/mpc_controller/lib/python3.10/site-packages:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_CH.UTF-8'), ('LC_PAPER', 'de_CH.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/fabiocar/fabiocar/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/ackermann_mux:/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3701-0005')]), 'shell': False}
+[17.383910] (vesc_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.385042] (vesc_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.385275] (-) TimerEvent: {}
+[17.385901] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/lib/vesc_driver/vesc_driver_node\n'}
+[17.401351] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/crc.hpp\n'}
+[17.416223] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/datatypes.hpp\n'}
+[17.431407] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/vesc_driver.hpp\n'}
+[17.447348] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/vesc_interface.hpp\n'}
+[17.462925] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/vesc_packet.hpp\n'}
+[17.477690] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp\n'}
+[17.485384] (-) TimerEvent: {}
+[17.496403] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/library_path.sh\n'}
+[17.512760] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/library_path.dsv\n'}
+[17.528012] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/lib/libvesc_driver.so\n'}
+[17.542959] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py\n'}
+[17.558682] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml\n'}
+[17.574136] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver\n'}
+[17.585525] (-) TimerEvent: {}
+[17.589766] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver\n'}
+[17.605400] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh\n'}
+[17.619055] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv\n'}
+[17.636227] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/path.sh\n'}
+[17.652618] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/environment/path.dsv\n'}
+[17.667469] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/local_setup.bash\n'}
+[17.682119] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/local_setup.sh\n'}
+[17.685621] (-) TimerEvent: {}
+[17.697210] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/local_setup.zsh\n'}
+[17.715224] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/local_setup.dsv\n'}
+[17.730734] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.dsv\n'}
+[17.745362] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver\n'}
+[17.762850] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver\n'}
+[17.778318] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.785716] (-) TimerEvent: {}
+[17.794696] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.811141] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.826887] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake\n'}
+[17.842084] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake\n'}
+[17.857842] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/fabiocar/fabiocar/install/vesc_driver/share/vesc_driver/package.xml\n'}
+[17.878653] (vesc_driver) CommandEnded: {'returncode': 0}
+[17.885991] (-) TimerEvent: {}
+[17.951761] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 0}
+[17.953696] (-) EventReactorShutdown: {}

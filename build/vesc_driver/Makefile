@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabiocar/roboracer_ws/src/vesc/vesc_driver
+CMAKE_SOURCE_DIR = /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabiocar/roboracer_ws/build/vesc_driver
+CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_driver
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/roboracer_ws/build/vesc_driver/CMakeFiles /home/fabiocar/roboracer_ws/build/vesc_driver//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles /home/fabiocar/fabiocar/build/vesc_driver//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/roboracer_ws/build/vesc_driver/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fabiocar/fabiocar/build/vesc_driver/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,19 +223,6 @@ vesc_driver_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver_node.dir/build.make CMakeFiles/vesc_driver_node.dir/build
 .PHONY : vesc_driver_node/fast
 
-#=============================================================================
-# Target rules for targets named vesc_device_namer
-
-# Build rule for target.
-vesc_device_namer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vesc_device_namer
-.PHONY : vesc_device_namer
-
-# fast build rule for target.
-vesc_device_namer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/build
-.PHONY : vesc_device_namer/fast
-
 rclcpp_components/node_main_vesc_driver_node.o: rclcpp_components/node_main_vesc_driver_node.cpp.o
 .PHONY : rclcpp_components/node_main_vesc_driver_node.o
 
@@ -259,54 +246,6 @@ rclcpp_components/node_main_vesc_driver_node.s: rclcpp_components/node_main_vesc
 rclcpp_components/node_main_vesc_driver_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_driver_node.dir/build.make CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.s
 .PHONY : rclcpp_components/node_main_vesc_driver_node.cpp.s
-
-src/vesc_device_namer.o: src/vesc_device_namer.cpp.o
-.PHONY : src/vesc_device_namer.o
-
-# target to build an object file
-src/vesc_device_namer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o
-.PHONY : src/vesc_device_namer.cpp.o
-
-src/vesc_device_namer.i: src/vesc_device_namer.cpp.i
-.PHONY : src/vesc_device_namer.i
-
-# target to preprocess a source file
-src/vesc_device_namer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.i
-.PHONY : src/vesc_device_namer.cpp.i
-
-src/vesc_device_namer.s: src/vesc_device_namer.cpp.s
-.PHONY : src/vesc_device_namer.s
-
-# target to generate assembly for a file
-src/vesc_device_namer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.s
-.PHONY : src/vesc_device_namer.cpp.s
-
-src/vesc_device_uuid_lookup.o: src/vesc_device_uuid_lookup.cpp.o
-.PHONY : src/vesc_device_uuid_lookup.o
-
-# target to build an object file
-src/vesc_device_uuid_lookup.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o
-.PHONY : src/vesc_device_uuid_lookup.cpp.o
-
-src/vesc_device_uuid_lookup.i: src/vesc_device_uuid_lookup.cpp.i
-.PHONY : src/vesc_device_uuid_lookup.i
-
-# target to preprocess a source file
-src/vesc_device_uuid_lookup.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.i
-.PHONY : src/vesc_device_uuid_lookup.cpp.i
-
-src/vesc_device_uuid_lookup.s: src/vesc_device_uuid_lookup.cpp.s
-.PHONY : src/vesc_device_uuid_lookup.s
-
-# target to generate assembly for a file
-src/vesc_device_uuid_lookup.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vesc_device_namer.dir/build.make CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.s
-.PHONY : src/vesc_device_uuid_lookup.cpp.s
 
 src/vesc_driver.o: src/vesc_driver.cpp.o
 .PHONY : src/vesc_driver.o
@@ -419,18 +358,11 @@ help:
 	@echo "... test"
 	@echo "... uninstall"
 	@echo "... vesc_driver_uninstall"
-	@echo "... vesc_device_namer"
 	@echo "... vesc_driver"
 	@echo "... vesc_driver_node"
 	@echo "... rclcpp_components/node_main_vesc_driver_node.o"
 	@echo "... rclcpp_components/node_main_vesc_driver_node.i"
 	@echo "... rclcpp_components/node_main_vesc_driver_node.s"
-	@echo "... src/vesc_device_namer.o"
-	@echo "... src/vesc_device_namer.i"
-	@echo "... src/vesc_device_namer.s"
-	@echo "... src/vesc_device_uuid_lookup.o"
-	@echo "... src/vesc_device_uuid_lookup.i"
-	@echo "... src/vesc_device_uuid_lookup.s"
 	@echo "... src/vesc_driver.o"
 	@echo "... src/vesc_driver.i"
 	@echo "... src/vesc_driver.s"

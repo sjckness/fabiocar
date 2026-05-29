@@ -1,0 +1,1 @@
+/home/fabiocar/fabiocar/build/teleop_tools_msgs/rosidl_generator_py/teleop_tools_msgs/__init__.py

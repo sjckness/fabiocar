@@ -1,8 +1,8 @@
-# Install script for directory: /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py
+# Install script for directory: /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/fabiocar/roboracer_ws/install/vesc_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/fabiocar/fabiocar/install/vesc_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

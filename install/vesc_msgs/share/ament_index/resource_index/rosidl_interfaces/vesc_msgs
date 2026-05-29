@@ -1,8 +1,1 @@
-msg/VescImu.idl
-msg/VescImu.msg
-msg/VescImuStamped.idl
-msg/VescImuStamped.msg
-msg/VescState.idl
-msg/VescState.msg
-msg/VescStateStamped.idl
-msg/VescStateStamped.msg
+/home/fabiocar/fabiocar/build/vesc_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs

@@ -1,1 +1,1 @@
-/home/fabiocar/roboracer_ws/install/f1tenth_stack:/home/fabiocar/roboracer_ws/install/vesc:/home/fabiocar/roboracer_ws/install/vesc_driver:/home/fabiocar/roboracer_ws/install/vesc_ackermann:/home/fabiocar/roboracer_ws/install/vesc_msgs:/home/fabiocar/roboracer_ws/install/mpc_controller:/home/fabiocar/roboracer_ws/install/llm_mpc_tuner:/home/fabiocar/roboracer_ws/install/ackermann_mux:/opt/ros/humble
+/home/fabiocar/fabiocar/build/vesc_driver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vesc_driver

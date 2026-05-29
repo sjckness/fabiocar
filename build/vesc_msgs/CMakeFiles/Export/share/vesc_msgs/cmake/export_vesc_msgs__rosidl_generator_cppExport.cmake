@@ -55,7 +55,7 @@ add_library(vesc_msgs::vesc_msgs__rosidl_generator_cpp INTERFACE IMPORTED)
 
 set_target_properties(vesc_msgs::vesc_msgs__rosidl_generator_cpp PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/vesc_msgs"
-  INTERFACE_LINK_LIBRARIES "builtin_interfaces::builtin_interfaces__rosidl_generator_cpp;std_msgs::std_msgs__rosidl_generator_cpp;geometry_msgs::geometry_msgs__rosidl_generator_cpp;rosidl_runtime_cpp::rosidl_runtime_cpp"
+  INTERFACE_LINK_LIBRARIES "builtin_interfaces::builtin_interfaces__rosidl_generator_cpp;std_msgs::std_msgs__rosidl_generator_cpp;rosidl_runtime_cpp::rosidl_runtime_cpp"
 )
 
 if(CMAKE_VERSION VERSION_LESS 3.0.0)

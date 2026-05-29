@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating mpc_controller.egg-info
+writing mpc_controller.egg-info/PKG-INFO
+writing dependency_links to mpc_controller.egg-info/dependency_links.txt
+writing entry points to mpc_controller.egg-info/entry_points.txt
+writing requirements to mpc_controller.egg-info/requires.txt
+writing top-level names to mpc_controller.egg-info/top_level.txt
+writing manifest file 'mpc_controller.egg-info/SOURCES.txt'
+reading manifest file 'mpc_controller.egg-info/SOURCES.txt'
+writing manifest file 'mpc_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/fabiocar/fabiocar/install/mpc_controller/lib/python3.10/site-packages/mpc-controller.egg-link (link to .)
+Installing frenet_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing kinematic_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+Installing trajectory_mpc_node script to /home/fabiocar/fabiocar/install/mpc_controller/lib/mpc_controller
+
+Installed /home/fabiocar/fabiocar/build/mpc_controller
+running symlink_data
+creating /home/fabiocar/fabiocar/install/mpc_controller/share/ament_index/resource_index/packages
+symbolically linking /home/fabiocar/fabiocar/build/mpc_controller/resource/mpc_controller -> /home/fabiocar/fabiocar/install/mpc_controller/share/ament_index/resource_index/packages
+symbolically linking /home/fabiocar/fabiocar/build/mpc_controller/package.xml -> /home/fabiocar/fabiocar/install/mpc_controller/share/mpc_controller

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs
+CMAKE_SOURCE_DIR = /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabiocar/roboracer_ws/build/vesc_msgs
+CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_msgs
 
 # Utility rule file for vesc_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/vesc_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/vesc_msgs_uninstall.dir/progress.make
 
 CMakeFiles/vesc_msgs_uninstall:
-	/usr/bin/cmake -P /home/fabiocar/roboracer_ws/build/vesc_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/fabiocar/fabiocar/build/vesc_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 vesc_msgs_uninstall: CMakeFiles/vesc_msgs_uninstall
 vesc_msgs_uninstall: CMakeFiles/vesc_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/vesc_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/vesc_msgs_uninstall.dir/clean
 
 CMakeFiles/vesc_msgs_uninstall.dir/depend:
-	cd /home/fabiocar/roboracer_ws/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles/vesc_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fabiocar/fabiocar/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles/vesc_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vesc_msgs_uninstall.dir/depend
 

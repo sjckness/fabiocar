@@ -1,0 +1,73 @@
+[1.135s] Invoking command in '/home/fabiocar/fabiocar/build/joy_teleop': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/joy_teleop/build --no-deps symlink_data
+[1.368s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[1.368s] !!
+[1.368s] 
+[1.368s]         ********************************************************************************
+[1.368s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.369s]         versions. Please use the underscore name 'script_dir' instead.
+[1.369s] 
+[1.369s]         This deprecation is overdue, please update your project and remove deprecated
+[1.369s]         calls to avoid build errors in the future.
+[1.369s] 
+[1.369s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.369s]         ********************************************************************************
+[1.369s] 
+[1.369s] !!
+[1.369s]   opt = self._enforce_underscore(opt, section)
+[1.394s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.394s]   warnings.warn(msg)
+[1.442s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[1.442s] !!
+[1.443s] 
+[1.443s]         ********************************************************************************
+[1.443s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.443s]         versions. Please use the underscore name 'script_dir' instead.
+[1.443s]         (Affected: joy_teleop).
+[1.443s] 
+[1.443s]         This deprecation is overdue, please update your project and remove deprecated
+[1.443s]         calls to avoid build errors in the future.
+[1.443s] 
+[1.443s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.443s]         ********************************************************************************
+[1.444s] 
+[1.444s] !!
+[1.444s]   opt = self._enforce_underscore(opt, section)
+[1.444s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[1.444s] !!
+[1.444s] 
+[1.444s]         ********************************************************************************
+[1.444s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[1.444s] 
+[1.444s]         License :: OSI Approved :: BSD
+[1.444s] 
+[1.445s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[1.445s]         ********************************************************************************
+[1.445s] 
+[1.445s] !!
+[1.445s]   self._finalize_license_expression()
+[1.648s] running develop
+[1.965s] running egg_info
+[1.988s] creating joy_teleop.egg-info
+[1.988s] writing joy_teleop.egg-info/PKG-INFO
+[1.989s] writing dependency_links to joy_teleop.egg-info/dependency_links.txt
+[1.989s] writing entry points to joy_teleop.egg-info/entry_points.txt
+[1.990s] writing requirements to joy_teleop.egg-info/requires.txt
+[1.990s] writing top-level names to joy_teleop.egg-info/top_level.txt
+[1.990s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[2.040s] reading manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[2.042s] writing manifest file 'joy_teleop.egg-info/SOURCES.txt'
+[2.067s] running build_ext
+[2.067s] Creating /home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages/joy-teleop.egg-link (link to .)
+[2.068s] Installing incrementer_server script to /home/fabiocar/fabiocar/install/joy_teleop/lib/joy_teleop
+[2.068s] Installing joy_teleop script to /home/fabiocar/fabiocar/install/joy_teleop/lib/joy_teleop
+[2.069s] 
+[2.069s] Installed /home/fabiocar/fabiocar/build/joy_teleop
+[2.069s] running symlink_data
+[2.069s] symbolically linking /home/fabiocar/fabiocar/build/joy_teleop/package.xml -> /home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop
+[2.070s] creating /home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/config
+[2.070s] symbolically linking /home/fabiocar/fabiocar/build/joy_teleop/config/joy_teleop_example.yaml -> /home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/config
+[2.070s] creating /home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/launch
+[2.070s] symbolically linking /home/fabiocar/fabiocar/build/joy_teleop/launch/example.launch.py -> /home/fabiocar/fabiocar/install/joy_teleop/share/joy_teleop/launch
+[2.070s] creating /home/fabiocar/fabiocar/install/joy_teleop/share/ament_index/resource_index/packages
+[2.071s] symbolically linking /home/fabiocar/fabiocar/build/joy_teleop/resource/joy_teleop -> /home/fabiocar/fabiocar/install/joy_teleop/share/ament_index/resource_index/packages
+[2.140s] Invoked command in '/home/fabiocar/fabiocar/build/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fabiocar/fabiocar/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fabiocar/fabiocar/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/joy_teleop/lib/python3.10/site-packages:/home/fabiocar/fabiocar/install/teleop_tools_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/joy_teleop/build --no-deps symlink_data

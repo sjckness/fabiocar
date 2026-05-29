@@ -1,0 +1,70 @@
+[2.249s] Invoking command in '/home/fabiocar/fabiocar/build/key_teleop': PYTHONPATH=/home/fabiocar/fabiocar/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/key_teleop/build --no-deps symlink_data
+[2.480s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[2.481s] !!
+[2.481s] 
+[2.481s]         ********************************************************************************
+[2.481s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.481s]         versions. Please use the underscore name 'script_dir' instead.
+[2.481s] 
+[2.481s]         This deprecation is overdue, please update your project and remove deprecated
+[2.481s]         calls to avoid build errors in the future.
+[2.481s] 
+[2.481s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.482s]         ********************************************************************************
+[2.482s] 
+[2.482s] !!
+[2.482s]   opt = self._enforce_underscore(opt, section)
+[2.506s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.506s]   warnings.warn(msg)
+[2.554s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[2.554s] !!
+[2.554s] 
+[2.554s]         ********************************************************************************
+[2.555s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.555s]         versions. Please use the underscore name 'script_dir' instead.
+[2.555s]         (Affected: key_teleop).
+[2.555s] 
+[2.555s]         This deprecation is overdue, please update your project and remove deprecated
+[2.555s]         calls to avoid build errors in the future.
+[2.555s] 
+[2.555s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.555s]         ********************************************************************************
+[2.556s] 
+[2.556s] !!
+[2.556s]   opt = self._enforce_underscore(opt, section)
+[2.556s] /home/fabiocar/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[2.556s] !!
+[2.556s] 
+[2.556s]         ********************************************************************************
+[2.556s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[2.556s] 
+[2.556s]         License :: OSI Approved :: BSD
+[2.556s] 
+[2.557s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[2.557s]         ********************************************************************************
+[2.557s] 
+[2.557s] !!
+[2.557s]   self._finalize_license_expression()
+[2.761s] running develop
+[3.088s] running egg_info
+[3.112s] creating key_teleop.egg-info
+[3.113s] writing key_teleop.egg-info/PKG-INFO
+[3.113s] writing dependency_links to key_teleop.egg-info/dependency_links.txt
+[3.113s] writing entry points to key_teleop.egg-info/entry_points.txt
+[3.114s] writing requirements to key_teleop.egg-info/requires.txt
+[3.114s] writing top-level names to key_teleop.egg-info/top_level.txt
+[3.114s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[3.166s] reading manifest file 'key_teleop.egg-info/SOURCES.txt'
+[3.168s] writing manifest file 'key_teleop.egg-info/SOURCES.txt'
+[3.195s] running build_ext
+[3.195s] Creating /home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages/key-teleop.egg-link (link to .)
+[3.197s] Installing key_teleop script to /home/fabiocar/fabiocar/install/key_teleop/lib/key_teleop
+[3.198s] 
+[3.198s] Installed /home/fabiocar/fabiocar/build/key_teleop
+[3.198s] running symlink_data
+[3.199s] symbolically linking /home/fabiocar/fabiocar/build/key_teleop/package.xml -> /home/fabiocar/fabiocar/install/key_teleop/share/key_teleop
+[3.199s] creating /home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/config
+[3.200s] symbolically linking /home/fabiocar/fabiocar/build/key_teleop/config/key_teleop.yaml -> /home/fabiocar/fabiocar/install/key_teleop/share/key_teleop/config
+[3.200s] creating /home/fabiocar/fabiocar/install/key_teleop/share/ament_index/resource_index/packages
+[3.200s] symbolically linking /home/fabiocar/fabiocar/build/key_teleop/resource/key_teleop -> /home/fabiocar/fabiocar/install/key_teleop/share/ament_index/resource_index/packages
+[3.319s] Invoked command in '/home/fabiocar/fabiocar/build/key_teleop' returned '0': PYTHONPATH=/home/fabiocar/fabiocar/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fabiocar/fabiocar/install/key_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/fabiocar/fabiocar/build/key_teleop/build --no-deps symlink_data

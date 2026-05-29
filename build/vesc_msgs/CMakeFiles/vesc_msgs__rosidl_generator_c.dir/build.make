@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs
+CMAKE_SOURCE_DIR = /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabiocar/roboracer_ws/build/vesc_msgs
+CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend.make
@@ -84,8 +84,6 @@ rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/rosidl_gene
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: rosidl_adapter/vesc_msgs/msg/VescState.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: rosidl_adapter/vesc_msgs/msg/VescImu.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -118,40 +116,8 @@ rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/std_msgs/ms
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Inertia.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/InertiaStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Point.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Point32.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PointStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Polygon.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstance.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstanceStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PolygonStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Pose.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Pose2D.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PoseArray.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PoseStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovariance.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Quaternion.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/QuaternionStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Transform.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/TransformStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Twist.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/TwistStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovariance.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
-rosidl_generator_c/vesc_msgs/msg/vesc_state.h: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.h
@@ -174,120 +140,57 @@ rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__struct.h: rosidl_gen
 rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h
 
-rosidl_generator_c/vesc_msgs/msg/vesc_imu.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/vesc_imu.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__struct.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__struct.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__type_support.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__type_support.h
-
-rosidl_generator_c/vesc_msgs/msg/vesc_imu_stamped.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/vesc_imu_stamped.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h
-
 rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c
 
 rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c
 
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c
-
-rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c
-
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o -c /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o -c /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c
 
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.i
 
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.s
 
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o -c /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o -c /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c
 
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.i
 
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.s
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o -c /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.i
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.s
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/flags.make
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o -MF CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o.d -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o -c /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c > CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.i
-
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c -o CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.s
 
 # Object files for target vesc_msgs__rosidl_generator_c
 vesc_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o" \
-"CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o" \
-"CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o" \
-"CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o"
+"CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o"
 
 # External object files for target vesc_msgs__rosidl_generator_c
 vesc_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c.o
 libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.c.o
-libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c.o
-libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c.o
 libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/build.make
-libvesc_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libvesc_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libvesc_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libvesc_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libvesc_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libvesc_msgs__rosidl_generator_c.so: CMakeFiles/vesc_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libvesc_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libvesc_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vesc_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -298,14 +201,6 @@ CMakeFiles/vesc_msgs__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/vesc_msgs__rosidl_generator_c.dir/clean
 
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.c
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__functions.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__struct.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu__type_support.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.c
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.c
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__functions.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state__struct.h
@@ -314,10 +209,8 @@ CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msg
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__functions.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__struct.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/vesc_imu.h
-CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/vesc_imu_stamped.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/vesc_state.h
 CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/vesc_msgs/msg/vesc_state_stamped.h
-	cd /home/fabiocar/roboracer_ws/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles/vesc_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fabiocar/fabiocar/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles/vesc_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vesc_msgs__rosidl_generator_c.dir/depend
 

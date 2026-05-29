@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs
+CMAKE_SOURCE_DIR = /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fabiocar/roboracer_ws/build/vesc_msgs
+CMAKE_BINARY_DIR = /home/fabiocar/fabiocar/build/vesc_msgs
 
 # Utility rule file for vesc_msgs__py.
 
@@ -71,13 +71,9 @@ vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/_vesc_msgs
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state.py
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped.py
-vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu.py
-vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped.py
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/__init__.py
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c
 vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c
-vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c
-vesc_msgs__py/CMakeFiles/vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c
 
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -94,8 +90,6 @@ rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vesc_msgs/msg/VescState.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vesc_msgs/msg/VescStateStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vesc_msgs/msg/VescImu.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/vesc_msgs/msg/VescImuStamped.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -128,40 +122,8 @@ rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovarianceStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Inertia.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/InertiaStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Point.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Point32.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PointStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Polygon.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstance.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PolygonInstanceStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PolygonStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Pose.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Pose2D.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PoseArray.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PoseStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovariance.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/PoseWithCovarianceStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Quaternion.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/QuaternionStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Transform.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/TransformStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Twist.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/TwistStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovariance.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/TwistWithCovarianceStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Vector3.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
-rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fabiocar/roboracer_ws/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/fabiocar/roboracer_ws/build/vesc_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fabiocar/fabiocar/build/vesc_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/fabiocar/fabiocar/build/vesc_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -175,12 +137,6 @@ rosidl_generator_py/vesc_msgs/msg/_vesc_state.py: rosidl_generator_py/vesc_msgs/
 rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped.py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped.py
 
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu.py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_imu.py
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped.py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped.py
-
 rosidl_generator_py/vesc_msgs/msg/__init__.py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/__init__.py
 
@@ -190,20 +146,10 @@ rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c: rosidl_generator_py/vesc_msgs
 rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped_s.c
 
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c
-
-rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c
-
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/__init__.py
-vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu.py
-vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_s.c
-vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped.py
-vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_imu_stamped_s.c
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state.py
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state_s.c
 vesc_msgs__py: rosidl_generator_py/vesc_msgs/msg/_vesc_state_stamped.py
@@ -217,10 +163,10 @@ vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/build: vesc_msgs__py
 .PHONY : vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/build
 
 vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/clean:
-	cd /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs__py.dir/cmake_clean.cmake
+	cd /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs__py.dir/cmake_clean.cmake
 .PHONY : vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/clean
 
 vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/depend:
-	cd /home/fabiocar/roboracer_ws/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/roboracer_ws/src/vesc/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py /home/fabiocar/roboracer_ws/build/vesc_msgs /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py /home/fabiocar/roboracer_ws/build/vesc_msgs/vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fabiocar/fabiocar/build/vesc_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fabiocar/fabiocar/src/f1tenth_system/vesc/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py /home/fabiocar/fabiocar/build/vesc_msgs /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py /home/fabiocar/fabiocar/build/vesc_msgs/vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vesc_msgs__py/CMakeFiles/vesc_msgs__py.dir/depend
 
