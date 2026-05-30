@@ -1,0 +1,22 @@
+-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fabiocar/fabiocar/build/vesc
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/environment/ament_prefix_path.sh
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/environment/path.sh
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/environment/path.dsv
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.bash
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.sh
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.zsh
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/local_setup.dsv
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/package.dsv
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/ament_index/resource_index/packages/vesc
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/cmake/vescConfig.cmake
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+-- Symlinking: /home/fabiocar/fabiocar/install/vesc/share/vesc/package.xml

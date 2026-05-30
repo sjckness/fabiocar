@@ -1,4 +1,5 @@
 [console_scripts]
+andre_mpc_node = mpc_controller.andre_mpc_node:main
 frenet_mpc_node = mpc_controller.frenet_mpc_node:main
 kinematic_mpc_node = mpc_controller.kinematic_mpc_node:main
 mpc_node = mpc_controller.mpc_node:main
